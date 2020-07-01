@@ -1,8 +1,11 @@
+---
+title: "New interfaces for teaching with NEST - CNS*2020"
+---
 
 <!-- HEADER -->
 <div id="header_wrap" class="outer">
 <header class="inner">
-<h1 id="project_title">CNS*2020 Workshop &ldquo;New interfaces for teaching with NEST&rdquo;</h1>
+<h1 id="project_title"><span style="font-size:90% !important">New interfaces for teaching with NEST:</span></h1>
 <h2 id="project_tagline">Hands-on with the NEST Desktop GUI and NESTML code generation</h2>
 </header>
 </div>
@@ -84,6 +87,25 @@
 </style>
 <script src="moment.js"></script>
 <script src="moment-timezone-with-data.js"></script>
+
+<p style="margin-top: -1em; text-align: center; font-style: italic !important">An online workshop at the [29th Annual Computational Neuroscience Meeting](https://www.cnsorg.org/cns-2020), July 18th, 2020</p>
+
+## Description
+
+NEST is established community software for the simulation of spiking neuronal network models capturing the full  detail  of  biological  network  structures  [1].  The  simulator  runs  efficiently  on  a  range  of  architectures  from  laptops  to  supercomputers  [2].  Many  peer-reviewed  neuroscientific  studies have used NEST as a simulation tool over the past 20 years. More recently, it has become a reference code for research on neuromorphic hardware systems [3].
+
+This tutorial provides hands-on experience with recent improvements of NEST. In the past, starting out with NEST could be challenging for computational neuroscientists, as models and simulations had to be programmed using SLI, C++ or Python. NEST Desktop changes this: It is an entirely graphical approach to the  construction  and  simulation of neuronal  network  models.  It  runs  installation-free in the browser and has proven its value in several university courses. This opens the  domain  of NEST to the teaching of neuroscience for students with little programming experience.NESTML complements this new interface by enhancing the development process of neuron and synapse models. Advanced researchers often want to study specific features not provided by models already available in NEST. Instead of having to turn to C++, using NESTML they can write down differential equations and necessary state transitions in the mathematical notation they are used to. These descriptions are then automatically processed to generate machine-optimised code.After a quick overview of the current status of NEST and upcoming new functionality, the tutorial works through a the construction of a balanced network to show how the combination of NEST Desktop and NESTML can be used in the modern workflow of a computational neuroscientist.
+
+
+### Citations
+
+[1] https://nest-simulator.readthedocs.io/
+
+[2] Jordan J., Ippen T., Helias M., Kitayama I., Sato M., Igarashi J., Diesmann M., Kunkel S. (2018) Extremely Scalable Spiking Neuronal Network Simulation Code: From Laptops to Exascale Computers. Frontiers in Neuroinformatics 12: 2
+	
+[3] Gutzen R., von Papen, M., Trensch G., Quaglio P. Grün S., Denker M. (2018) Reproducible Neural Network Simulations: Statistical Methods for Model Validation on the Level of Network Activity Data. Frontiers in Neuroinformatics 12 (90)
+
+
 
 ## Schedule
 
@@ -173,21 +195,36 @@ function printTable(el, in_tz) {
 </table>
 </div>
 
-## Description
+## Links
 
-NEST is established community software for the simulation of spiking neuronal network models capturing the full  detail  of  biological  network  structures  [1].  The  simulator  runs  efficiently  on  a  range  of  architectures  from  laptops  to  supercomputers  [2].  Many  peer-reviewed  neuroscientific  studies have used NEST as a simulation tool over the past 20 years. More recently, it has become a reference code for research on neuromorphic hardware systems [3].
+<div style="text-align:center">[<img src="https://nest-simulator.readthedocs.io/en/nest-2.20.1/_static/img/nest_logo.png" border="0">](https://nest-simulator.readthedocs.io/)<br>[<span style="font-size:120%; font-weight: 120%">NEST Simulator</span>](https://nest-simulator.readthedocs.io/)</div>
 
-This tutorial provides hands-on experience with recent improvements of NEST. In the past, starting out with NEST could be challenging for computational neuroscientists, as models and simulations had to be programmed using SLI, C++ or Python. NEST Desktop changes this: It is an entirely graphical approach to the  construction  and  simulation of neuronal  network  models.  It  runs  installation-free in the browser and has proven its value in several university courses. This opens the  domain  of NEST to the teaching of neuroscience for students with little programming experience.NESTML complements this new interface by enhancing the development process of neuron and synapse models. Advanced researchers often want to study specific features not provided by models already available in NEST. Instead of having to turn to C++, using NESTML they can write down differential equations and necessary state transitions in the mathematical notation they are used to. These descriptions are then automatically processed to generate machine-optimised code.After a quick overview of the current status of NEST and upcoming new functionality, the tutorial works through a the construction of a balanced network to show how the combination of NEST Desktop and NESTML can be used in the modern workflow of a computational neuroscientist.
+<p>NEST Simulator is a spiking neuron simulator which specialises in point neurons and neurons with few comparments. It can simulate synaptic plasticity, structural plasticity, gap junctions and countless other features on machines ranging from home PCs to high-performance computing systems.</p>
+
+<div style="text-align:center">[<img src="https://nest-desktop.readthedocs.io/en/latest/_images/nest-desktop-logo.png" border="0" width="240" height="222">](https://nest-desktop.readthedocs.io/)<br>[<span style="font-size:120%; font-weight: 120%">NEST Desktop</span>](https://nest-desktop.readthedocs.io/)</div>
+
+<p>NEST Desktop is a web-based GUI application for NEST Simulator. It enables the rapid construction, parametrization, and instrumentation of neuronal network models.</p>
+
+<div style="text-align:center">[<img src="https://nestml.readthedocs.io/en/latest/_static/nestml-logo.png" border="0" width="240" height="73">](https://nestml.readthedocs.io/)<br>[<span style="font-size:120%; font-weight: 120%">NESTML</span>](https://nestml.readthedocs.io/)</div>
+
+<p> NESTML is a domain-specific modeling language and code-generation toolchain. It supports the specification of neuron models in an intuitive and concise syntax. Optimised code generation for the target simulation platform couples a highly accessible language with good simulation performance.</p>
 
 
-### Citations
+## Registration
 
-[1] https://nest-simulator.readthedocs.io/
+Please don't forget to register for the conference. Registration is free at [https://www.cnsorg.org/cns-2020](https://www.cnsorg.org/cns-2020).
 
-[2] Jordan J., Ippen T., Helias M., Kitayama I., Sato M., Igarashi J., Diesmann M., Kunkel S. (2018) Extremely Scalable Spiking Neuronal Network Simulation Code: From Laptops to Exascale Computers. Frontiers in Neuroinformatics 12: 2
-	
-[3] Gutzen R., von Papen, M., Trensch G., Quaglio P. Grün S., Denker M. (2018) Reproducible Neural Network Simulations: Statistical Methods for Model Validation on the Level of Network Activity Data. Frontiers in Neuroinformatics 12 (90)
 
+## Connection details
+
+To allow for interactive sessions, workshops will run as &lquo;virtual rooms&rquo; (i.e. video calls) in CNS*2020. The platform is **Google Meet**, and detailed instructions on how to set up everything are going to follow soon. Workshops are not recorded and are not livestreamed events on Youtube.
+
+Please note that the CNS board is preparing the details of the communication and hosting platform. All of these details will be announced as soon as they are made available.
+
+
+## Organisation
+
+This workshop is organised by, alphabetically, [Charl Linssen](https://www.fz-juelich.de/SharedDocs/Personen/IAS/JSC/EN/staff/linssen_c.html) (Forschungszentrum Jülich, Germany), [Renato Duarte](https://www.fz-juelich.de/SharedDocs/Personen/INM/INM-6/EN/staff/Duarte_Renato.html?nn=1789538) (ibid.) and [Sebastian Spreizer](https://www.uni-trier.de/index.php?id=73522&L=0) (University of Trier, Germany). For general inquiries, please contact Charl at <a href="mailto:c.linssen@fz-juelich.de">c.linssen@fz-juelich.de</a>.
 
 </section>
 </div>
@@ -196,9 +233,7 @@ This tutorial provides hands-on experience with recent improvements of NEST. In 
 <div id="footer_wrap" class="outer">
 <footer class="inner">
 
-<p class="copyright">Slate theme maintained by <a href="https://github.com/pages-themes">pages-themes</a></p>
-
-<p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+<p class="copyright" style="color: #cccccc">Slate theme maintained by <a href="https://github.com/pages-themes">pages-themes</a> &bullet; Published with <a href="https://pages.github.com">GitHub Pages</a> &bullet; Timezone magic thanks to <a href="https://momentjs.com/">moment.js</a></p>
 </footer>
 </div>
 
