@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>CNS*2020 Workshop “New interfaces for teaching with NEST”</title>
+  <title>_index</title>
   <style type="text/css">
       code{white-space: pre-wrap;}
       span.smallcaps{font-variant: small-caps;}
@@ -13,21 +13,98 @@
   </style>
 </head>
 <body>
-<header>
-<h1 class="title">CNS*2020 Workshop “New interfaces for teaching with NEST”</h1>
+<!-- HEADER -->
+<div id="header_wrap" class="outer">
+<header class="inner">
+<h1 id="project_title">
+CNS*2020 Workshop “New interfaces for teaching with NEST”
+</h1>
+<h2 id="project_tagline">
+Hands-on with the NEST Desktop GUI and NESTML code generation
+</h2>
 </header>
-<h1 id="cns2020-workshop-new-interfaces-for-teaching-with-nest">CNS*2020 Workshop “New interfaces for teaching with NEST”</h1>
+</div>
+<!-- MAIN CONTENT -->
+<div id="main_content_wrap" class="outer">
+<section id="main_content" class="inner">
+<link rel="stylesheet" type="text/css" media="screen" href="https://pages-themes.github.io/slate/assets/css/style.css?v=dd924ed8bde9d034c169c8f6d051bf93723eabbd">
+<style>
+/* class applies to select element itself, not a wrapper element */
+.select-css {
+    font-family: sans-serif;
+    color: #444;
+    line-height: 1.2;
+    margin-bottom: .3em;
+    padding: .6em 1.4em .5em .8em;
+    max-width: 100%; /* useful when width is set to anything other than 100% */
+    box-sizing: border-box;
+    border: 1px solid #aaa;
+    box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+    border-radius: .5em;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    /* note: bg image below uses 2 urls. The first is an svg data uri for the arrow icon, and the second is the gradient. 
+        for the icon, if you want to change the color, be sure to use `%23` instead of `#`, since it's a url. You can also swap in a different svg icon or an external image reference
+        
+    */
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'),
+      linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%);
+    background-repeat: no-repeat, repeat;
+    /* arrow icon position (1em from the right, 50% vertical) , then gradient position*/
+    background-position: right .7em top 50%, 0 0;
+    /* icon size, then gradient */
+    background-size: .65em auto, 100%;
+}
+/* Hide arrow icon in IE browsers */
+.select-css::-ms-expand {
+    display: none;
+}
+/* Hover style */
+.select-css:hover {
+    border-color: #888;
+}
+/* Focus style */
+.select-css:focus {
+    border-color: #aaa;
+    /* It'd be nice to use -webkit-focus-ring-color here but it doesn't work on box-shadow */
+    box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+    box-shadow: 0 0 0 3px -moz-mac-focusring;
+    color: #222; 
+    outline: none;
+}
+
+/* Set options to normal weight */
+.select-css option {
+    font-weight:normal;
+}
+
+/* Support for rtl text, explicit support for Arabic and Hebrew */
+*[dir="rtl"] .select-css, :root:lang(ar) .select-css, :root:lang(iw) .select-css {
+    background-position: left .7em top 50%, 0 0;
+    padding: .6em .8em .5em 1.4em;
+}
+
+/* Disabled styles */
+.select-css:disabled, .select-css[aria-disabled=true] {
+    color: graytext;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22graytext%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'),
+      linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%);
+}
+
+.select-css:disabled:hover, .select-css[aria-disabled=true] {
+    border-color: #aaa;
+}
+</style>
 <script src="moment.js"></script>
 <script src="moment-timezone-with-data.js"></script>
 <h2 id="schedule">Schedule</h2>
 <script>
 var start_time = moment.tz("2020-07-18 12:00", "Europe/Berlin");
-</script>
-<br><br>
-<script>
 
-s = "<label for=\"tz-selector\">Timezone:</label>";
-s += "<select name=\"tz-selector\" id=\"tz-selector\" onChange=\"printTable(document.getElementById('schedule'), document.getElementById('tz-selector').value);\">";
+s = "<label for=\"tz-selector\">Timezone:&nbsp;</label>";
+s += "<select class=\"select-css\" name=\"tz-selector\" id=\"tz-selector\" onChange=\"printTable(document.getElementById('schedule'), document.getElementById('tz-selector').value);\">";
 
 moment.tz.names().forEach(function (item, index) {
     s += "<option value=\"" + item + "\"";
@@ -41,8 +118,7 @@ s += "</select>";
 document.write(s);
 
 document.getElementById('tz-selector').value = "Europe/Berlin";
-</script>
-<script>
+
 function printTable(el, in_tz) {
     //alert(in_tz);
     for (var i = 0; i < document.getElementsByClassName('timecell').length; ++i) {
@@ -58,14 +134,14 @@ function printTable(el, in_tz) {
 </script>
 <div id="schedule" name="schedule">
 <table>
+<tr>
 <th>
-<td>
 Time <noscript>(Berlin<br>timezone)</noscript>
-</td>
-<td>
-Description
-</td>
 </th>
+<th>
+Description
+</th>
+</tr>
 <tr>
 <td class="timecell">
 <noscript>
@@ -190,10 +266,24 @@ Closing
 </table>
 </div>
 <h2 id="description">Description</h2>
-<p>NEST is established community software for the simulation of spiking neuronal network models capturing the full detail of biological network structures [1]. The simulator runs efficiently on a range of architectures from laptops to supercomputers [2]. Many peer-reviewed neuroscientific studies have used NEST as a simulation tool over the past 20 years. More recently, it has become a reference code for research on neuromorphic hardware systems [3].This tutorial provides hands-on experience with recent improvements of NEST. In the past, starting out with NEST could be challenging for computational neuroscientists, as models and simulations had to be programmed using SLI, C++ or Python. NEST Desktop changes this: It is an entirely graphical approach to the construction and simulation of neuronal network models. It runs installation-free in the browser and has proven its value in several university courses. This opens the domain of NEST to the teaching of neuroscience for students with little programming experience.NESTML complements this new interface by enhancing the development process of neuron and synapse models. Advanced researchers often want to study specific features not provided by models already available in NEST. Instead of having to turn to C++, using NESTML they can write down differential equations and necessary state transitions in the mathematical notation they are used to. These descriptions are then automatically processed to generate machine-optimised code.After a quick overview of the current status of NEST and upcoming new functionality, the tutorial works through a concrete example [4] to show how the combination of NEST Desktop and NESTML can be used in the modern workflow of a computational neuroscientist.</p>
+<p>NEST is established community software for the simulation of spiking neuronal network models capturing the full detail of biological network structures [1]. The simulator runs efficiently on a range of architectures from laptops to supercomputers [2]. Many peer-reviewed neuroscientific studies have used NEST as a simulation tool over the past 20 years. More recently, it has become a reference code for research on neuromorphic hardware systems [3].</p>
+<p>This tutorial provides hands-on experience with recent improvements of NEST. In the past, starting out with NEST could be challenging for computational neuroscientists, as models and simulations had to be programmed using SLI, C++ or Python. NEST Desktop changes this: It is an entirely graphical approach to the construction and simulation of neuronal network models. It runs installation-free in the browser and has proven its value in several university courses. This opens the domain of NEST to the teaching of neuroscience for students with little programming experience.NESTML complements this new interface by enhancing the development process of neuron and synapse models. Advanced researchers often want to study specific features not provided by models already available in NEST. Instead of having to turn to C++, using NESTML they can write down differential equations and necessary state transitions in the mathematical notation they are used to. These descriptions are then automatically processed to generate machine-optimised code.After a quick overview of the current status of NEST and upcoming new functionality, the tutorial works through a the construction of a balanced network to show how the combination of NEST Desktop and NESTML can be used in the modern workflow of a computational neuroscientist.</p>
+<h3 id="citations">Citations</h3>
 <p>[1] https://nest-simulator.readthedocs.io/</p>
 <p>[2] Jordan J., Ippen T., Helias M., Kitayama I., Sato M., Igarashi J., Diesmann M., Kunkel S. (2018) Extremely Scalable Spiking Neuronal Network Simulation Code: From Laptops to Exascale Computers. Frontiers in Neuroinformatics 12: 2</p>
 <p>[3] Gutzen R., von Papen, M., Trensch G., Quaglio P. Grün S., Denker M. (2018) Reproducible Neural Network Simulations: Statistical Methods for Model Validation on the Level of Network Activity Data. Frontiers in Neuroinformatics 12 (90)</p>
-<p>[4] Duarte R. &amp; Morrison A. (2014). “Dynamic stability of sequential stimulus representations in adapting neuronal networks”, Front. Comput. Neurosci.</p>
+</section>
+</div>
+<!-- FOOTER  -->
+<div id="footer_wrap" class="outer">
+<footer class="inner">
+<p class="copyright">
+Slate theme maintained by <a href="https://github.com/pages-themes">pages-themes</a>
+</p>
+<p>
+Published with <a href="https://pages.github.com">GitHub Pages</a>
+</p>
+</footer>
+</div>
 </body>
 </html>
