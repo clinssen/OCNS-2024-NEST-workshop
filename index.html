@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>index</title>
+  <title>CNS*2020 Workshop “New interfaces for teaching with NEST”</title>
   <style type="text/css">
       code{white-space: pre-wrap;}
       span.smallcaps{font-variant: small-caps;}
@@ -13,31 +13,32 @@
   </style>
 </head>
 <body>
+<header>
+<h1 class="title">CNS*2020 Workshop “New interfaces for teaching with NEST”</h1>
+</header>
 <h1 id="cns2020-workshop-new-interfaces-for-teaching-with-nest">CNS*2020 Workshop “New interfaces for teaching with NEST”</h1>
-<script src="https://raw.githubusercontent.com/clinssen/OCNS-2020-workshop/master/moment.js"></script>
-<script src="https://raw.githubusercontent.com/clinssen/OCNS-2020-workshop/master/moment-timezone-with-data.js"></script>
+<script src="moment.js"></script>
+<script src="moment-timezone-with-data.js"></script>
 <h2 id="schedule">Schedule</h2>
 <script>
 var start_time = moment.tz("2020-07-18 12:00", "Europe/Berlin");
 </script>
-<script>
-document.write(moment().format());
-</script>
 <br><br>
 <script>
 
-document.write("<label for=\"tz-selector\">Timezone:</label>");
-document.write("<select name=\"tz-selector\" id=\"tz-selector\" onChange=\"printTable(document.getElementById('schedule'), document.getElementById('tz-selector').value);\">");
+s = "<label for=\"tz-selector\">Timezone:</label>";
+s += "<select name=\"tz-selector\" id=\"tz-selector\" onChange=\"printTable(document.getElementById('schedule'), document.getElementById('tz-selector').value);\">";
 
 moment.tz.names().forEach(function (item, index) {
-    document.write("<option value=\"" + item + "\"");
+    s += "<option value=\"" + item + "\"";
     if (item.localeCompare("Europe/Berlin") == 0) {
-        document.write(" selected=\"selected\"");
+        s += " selected=\"selected\"";
     }
-    document.write(">" + item + "</option>");
+    s += ">" + item + "</option>";
 });
 
-document.write("</select>");
+s += "</select>";
+document.write(s);
 
 document.getElementById('tz-selector').value = "Europe/Berlin";
 </script>

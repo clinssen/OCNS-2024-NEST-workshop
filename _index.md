@@ -1,3 +1,5 @@
+% CNS*2020 Workshop &ldquo;New interfaces for teaching with NEST&rdquo;
+
 # CNS*2020 Workshop &ldquo;New interfaces for teaching with NEST&rdquo;
 
 <script src="moment.js"></script>
@@ -9,24 +11,22 @@
 var start_time = moment.tz("2020-07-18 12:00", "Europe/Berlin");
 </script>
 
-<script>
-document.write(moment().format());
-</script>
 <br><br>
 <script>
 
-document.write("<label for=\"tz-selector\">Timezone:</label>");
-document.write("<select name=\"tz-selector\" id=\"tz-selector\" onChange=\"printTable(document.getElementById('schedule'), document.getElementById('tz-selector').value);\">");
+s = "<label for=\"tz-selector\">Timezone:</label>";
+s += "<select name=\"tz-selector\" id=\"tz-selector\" onChange=\"printTable(document.getElementById('schedule'), document.getElementById('tz-selector').value);\">";
 
 moment.tz.names().forEach(function (item, index) {
-	document.write("<option value=\"" + item + "\"");
+	s += "<option value=\"" + item + "\"";
 	if (item.localeCompare("Europe/Berlin") == 0) {
-		document.write(" selected=\"selected\"");
+		s += " selected=\"selected\"";
 	}
-	document.write(">" + item + "</option>");
+	s += ">" + item + "</option>";
 });
 
-document.write("</select>");
+s += "</select>";
+document.write(s);
 
 document.getElementById('tz-selector').value = "Europe/Berlin";
 </script>
