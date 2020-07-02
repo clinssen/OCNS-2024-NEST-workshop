@@ -88,7 +88,7 @@ title: "New interfaces for teaching with NEST - CNS*2020"
 <script src="moment.js"></script>
 <script src="moment-timezone-with-data.js"></script>
 
-<p style="margin-top: -1em; text-align: center; font-style: italic !important">An online workshop at the [29th Annual Computational Neuroscience Meeting](https://www.cnsorg.org/cns-2020), July 18th, 2020</p>
+<p style="margin-top: -1em; text-align: center; font-style: italic !important">An online tutorial at the [29th Annual Computational Neuroscience Meeting](https://www.cnsorg.org/cns-2020), July 18th, 2020</p>
 
 ## Description
 
@@ -149,47 +149,47 @@ function printTable(el, in_tz) {
 <th>Description</th>
 </tr>
 <tr>
-<td class="timecell"><noscript>12:00</noscript>12:00</td>
+<td class="timecell"><noscript>16:00</noscript>16:00</td>
 <td>Welcome and introduction to the NEST Initiative</td>
 </tr>
 <tr>
-<td class="timecell"><noscript>12:30</noscript>12:30</td>
+<td class="timecell"><noscript>16:30</noscript>16:30</td>
 <td>Hands-on with NEST Desktop</td>
 </tr>
 <tr>
-<td class="timecell"><noscript>13:30</noscript>13:30</td>
+<td class="timecell"><noscript>17:30</noscript>17:30</td>
 <td>Lunch break/social</td>
 </tr>
 <tr>
-<td class="timecell"><noscript>14:00</noscript>14:00</td>
+<td class="timecell"><noscript>18:00</noscript>18:00</td>
 <td>Hands-on running NEST from Jupyter Notebooks</td>
 </tr>
 <tr>
-<td class="timecell"><noscript>15:00</noscript>15:00</td>
+<td class="timecell"><noscript>19:00</noscript>19:00</td>
 <td>(break for CNS2020 keynote by Matt Botvinick)</td>
 </tr>
 <tr>
-<td class="timecell"><noscript>16:15</noscript>16:15</td>
+<td class="timecell"><noscript>20:15</noscript>20:15</td>
 <td>Introduction to NESTML</td>
 </tr>
 <tr>
-<td class="timecell"><noscript>16:45</noscript>16:45</td>
+<td class="timecell"><noscript>20:45</noscript>20:45</td>
 <td>Hands-on with NESTML and Jupyter Notebooks</td>
 </tr>
 <tr>
-<td class="timecell"><noscript>17:15</noscript>17:15</td>
+<td class="timecell"><noscript>21:15</noscript>21:15</td>
 <td>Hands-on with balanced network exercises</td>
 </tr>
 <tr>
-<td class="timecell"><noscript>17:45</noscript>17:45</td>
+<td class="timecell"><noscript>21:45</noscript>21:45</td>
 <td>Coffee break/social</td>
 </tr>
 <tr>
-<td class="timecell"><noscript>18:15</noscript>18:15</td>
+<td class="timecell"><noscript>22:15</noscript>22:15</td>
 <td>Hands-on with balanced network (continued)</td>
 </tr>
 <tr>
-<td class="timecell"><noscript>19:00</noscript>19:00</td>
+<td class="timecell"><noscript>23:00</noscript>23:00</td>
 <td>Closing</td>
 </tr>
 </table>
@@ -217,14 +217,14 @@ Please don't forget to register for the conference. Registration is free at [htt
 
 ## Connection details
 
-To allow for interactive sessions, workshops will run as &lquo;virtual rooms&rquo; (i.e. video calls) in CNS*2020. The platform is **Google Meet**, and detailed instructions on how to set up everything are going to follow soon. Workshops are not recorded and are not livestreamed events on Youtube.
+To allow for interactive sessions, tutorials will run as &lquo;virtual rooms&rquo; (i.e. video calls) in CNS*2020. The platform is **Google Meet**, and detailed instructions on how to set up everything are going to follow soon. tutorials are not recorded and are not livestreamed events on Youtube.
 
 Please note that the CNS board is preparing the details of the communication and hosting platform. All of these details will be announced as soon as they are made available.
 
 
 ## Organisation
 
-This workshop is organised by, alphabetically, [Charl Linssen](https://www.fz-juelich.de/SharedDocs/Personen/IAS/JSC/EN/staff/linssen_c.html) (Forschungszentrum Jülich, Germany), [Renato Duarte](https://www.fz-juelich.de/SharedDocs/Personen/INM/INM-6/EN/staff/Duarte_Renato.html?nn=1789538) (ibid.) and [Sebastian Spreizer](https://www.uni-trier.de/index.php?id=73522&L=0) (University of Trier, Germany). For general inquiries, please contact Charl at <a href="mailto:c.linssen@fz-juelich.de">c.linssen@fz-juelich.de</a>.
+This tutorial is organised by, alphabetically, [Charl Linssen](https://www.fz-juelich.de/SharedDocs/Personen/IAS/JSC/EN/staff/linssen_c.html) (Forschungszentrum Jülich, Germany), [Renato Duarte](https://www.fz-juelich.de/SharedDocs/Personen/INM/INM-6/EN/staff/Duarte_Renato.html?nn=1789538) (ibid.) and [Sebastian Spreizer](https://www.uni-trier.de/index.php?id=73522&L=0) (University of Trier, Germany). For general inquiries, please contact Charl at <a href="mailto:c.linssen@fz-juelich.de">c.linssen@fz-juelich.de</a>.
 
 </section>
 </div>
