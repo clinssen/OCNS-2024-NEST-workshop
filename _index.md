@@ -217,7 +217,7 @@ Please don't forget to register for the conference. Registration is free at [htt
 
 ## Connection details
 
-To allow for interactive sessions, tutorials will run as “virtual rooms” (i.e. video calls) in CNS*2020. The platform is [https://zoom.us/](Zoom.us), and detailed instructions on how to set up everything are going to follow soon. Tutorials are not recorded and are not livestreamed events on YouTube.
+To allow for interactive sessions, tutorials will run as “virtual rooms” (i.e. video calls) in CNS*2020. The platform is [Zoom.us](https://zoom.us/), and detailed instructions on how to set up everything are going to follow soon. Tutorials are not recorded and are not livestreamed events on YouTube.
 
 Please note that the CNS board is preparing the details of the communication and hosting platform. All of these details will be announced as soon as they are made available.
 
