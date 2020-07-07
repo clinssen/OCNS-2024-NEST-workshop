@@ -224,9 +224,21 @@ To allow for interactive sessions, tutorials will run as “virtual rooms” (i.
 Please note that the CNS board is preparing the details of the communication and hosting platform. All of these details will be announced as soon as they are made available.
 
 
+## Software requirements
+
+We will provide login details for virtual machines on Human Brain Project (EBRAINS) infrastructure to registered participants.
+
+You can also run the software on a local computer. We suggest using the Docker container provided by NEST Desktop, that includes all necessary software. Please refer to the installation instructions at: [https://nest-desktop.readthedocs.io/en/latest/user/setup.html#via-docker](https://nest-desktop.readthedocs.io/en/latest/user/setup.html#via-docker).
+
+
 ## Organisation
 
 This tutorial is organised by, alphabetically, [Charl Linssen](https://www.fz-juelich.de/SharedDocs/Personen/IAS/JSC/EN/staff/linssen_c.html) (Forschungszentrum Jülich, Germany), [Renato Duarte](https://www.fz-juelich.de/SharedDocs/Personen/INM/INM-6/EN/staff/Duarte_Renato.html?nn=1789538) (ibid.) and [Sebastian Spreizer](https://www.uni-trier.de/index.php?id=73522&L=0) (University of Trier, Germany). For general inquiries, please contact Charl at <a href="mailto:c.linssen@fz-juelich.de">c.linssen@fz-juelich.de</a>.
+
+
+## Acknowledgements
+
+We acknowledge the use of [Fenix Infrastructure](https://fenix-ri.eu) resources, which are partially funded from the European Union's Horizon 2020 research and innovation programme through the ICEI project under the grant agreement No. 800858.
 
 </section>
 </div>
