@@ -219,13 +219,11 @@ Please don't forget to register for the conference. Registration is free at [htt
 
 ## Connection details
 
-To allow for interactive sessions, tutorials will run as “virtual rooms” (i.e. video calls) in CNS*2020. The platform is BigBlueButton hosted at Forschungszentrum Jülich, Germany. It runs in your browser, and no account or installation is required.
-
-If you would like to give the platform a try before the tutorial, you can do so by registering a free account at [https://demo.bigbluebutton.org/gl/](https://demo.bigbluebutton.org/gl/).
+To allow for interactive sessions, tutorials will run as “virtual rooms” (i.e. video calls) in CNS*2020. The platform is [Zoom](https://zoom.us/). It can run in your browser, and no account or installation is required. In some cases, installing the software on your local computer can improve the quality of the video and audio.
 
 Tutorials are not recorded and are not livestreamed events on YouTube.
 
-**The link for the tutorial video stream has been annonuced on the [Sched instance for CNS*2020](https://cns2020online.sched.com)**
+**The link for the tutorial video stream has been announced on the [Sched instance for CNS*2020](https://cns2020online.sched.com)**
 
 
 ## Software requirements
