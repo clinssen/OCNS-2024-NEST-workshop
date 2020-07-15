@@ -248,7 +248,7 @@ You can also run the software on a local computer. We suggest using two Docker i
   docker run -i -d -p 7003:7003 -t clifzju/nest-nestml-jupyterlab-ocns-tutorial
   ```
 
-  You can then access the server in your browser by navigating to the URL [http//localhost:7003](http://localhost:7003).
+  You can then access the server in your browser by navigating to the URL [http://localhost:7003](http://localhost:7003).
 
 * [NEST Desktop server](https://github.com/clinssen/OCNS-2020-workshop/tree/master/docker_containers/nest-desktop-ocns-tutorial)
 
