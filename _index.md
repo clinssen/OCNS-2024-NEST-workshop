@@ -228,9 +228,47 @@ Tutorials are not recorded and are not livestreamed events on YouTube.
 
 ## Software requirements
 
-We will provide login details for virtual machines on Human Brain Project (EBRAINS) infrastructure to registered participants.
+We will provide login details for virtual machines on Human Brain Project (EBRAINS) infrastructure to registered participants. You will be able to access the required software directly from your browser, without requiring any installation. Access is provided to a NEST Desktop instance, as well as a [JupyterHub](https://jupyterhub.readthedocs.io/) environment that includes NEST Simulator and NESTML.
 
-You can also run the software on a local computer. We suggest using the Docker container provided by NEST Desktop, that includes all necessary software. Please refer to the installation instructions at: [https://nest-desktop.readthedocs.io/en/latest/user/setup.html#via-docker](https://nest-desktop.readthedocs.io/en/latest/user/setup.html#via-docker).
+You can also run the software on a local computer. We suggest using two Docker images that we provide:
+
+* [Jupyter Notebook server with NEST and NESTML support](https://github.com/clinssen/OCNS-2020-workshop/tree/master/docker_containers/nest-nestml-jupyterlab-ocns-tutorial)
+
+  Launches a Jupyter Notebook server on localhost at port 7003.
+
+  The image is available via DockerHub. To install:
+
+  ```
+  docker pull clifzju/nest-nestml-jupyterlab-ocns-tutorial
+  ```
+
+  Then run the image while forwarding the port:
+
+  ```
+  docker run -i -d -p 7003:7003 -t clifzju/nest-nestml-jupyterlab-ocns-tutorial
+  ```
+
+  You can then access the server in your browser by navigating to the URL [http//localhost:7003](http://localhost:7003).
+
+* [NEST Desktop server](https://github.com/clinssen/OCNS-2020-workshop/tree/master/docker_containers/nest-desktop-ocns-tutorial)
+
+  Slightly customised image based on the official [NEST Desktop docker image](https://nest-desktop.readthedocs.io/en/latest/deployer/deploy-docker.html).
+
+  The image is available via DockerHub. To install:
+
+  ```
+  docker pull clifzju/nest-desktop-ocns-tutorial
+  ```
+
+  Then run the image while forwarding the ports:
+
+  ```
+  docker run -i -d -p 7000:5000 -p 7001:8000 -t clifzju/nest-desktop-ocns-tutorial
+  ```
+
+  You can then access the server in your browser by navigating to the URL [http//localhost:7001](http://localhost:7001).
+
+You can run Docker containers interactively by omitting the ``-d`` parameter.
 
 
 ## Organisation
