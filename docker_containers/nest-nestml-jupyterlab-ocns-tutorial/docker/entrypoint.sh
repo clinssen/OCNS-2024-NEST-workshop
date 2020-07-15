@@ -14,11 +14,7 @@ cd
 
 jupyter-lab &
 
-# Start NEST Server
-nest-server start -d -h 0.0.0.0 -u nest &
-
-# Start NEST Desktop
-nest-desktop start -h 0.0.0.0 &
+git clone https://github.com/clinssen/OCNS-2020-workshop
 
 /bin/bash
 

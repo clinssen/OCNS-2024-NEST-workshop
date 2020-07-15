@@ -1,6 +1,6 @@
 {
   "manual": true,
-  "host": "0.0.0.0",
+  "host": "",
   "port": "7000",
   "secure": false
 }
