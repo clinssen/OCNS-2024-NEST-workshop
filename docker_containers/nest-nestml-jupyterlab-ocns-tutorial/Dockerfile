@@ -1,4 +1,4 @@
-FROM nestml
+FROM nestsim/nest:latest
 
 RUN apt-get update && apt-get install -y build-essential python3-dev python3-pip git nodejs curl cmake libboost-all-dev wget libncurses-dev libreadline-dev
 RUN python3 -m pip install --upgrade pip setuptools wheel
