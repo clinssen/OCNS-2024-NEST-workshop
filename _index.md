@@ -152,15 +152,19 @@ function printTable(el, in_tz) {
 </tr>
 <tr>
 <td class="timecell"><noscript>16:00</noscript>16:00</td>
-<td>Welcome and introduction to the NEST Initiative</td>
+<td>Welcome and introduction to NEST Simulator</td>
 </tr>
 <tr>
 <td class="timecell"><noscript>16:30</noscript>16:30</td>
-<td>Hands-on with NEST Desktop</td>
+<td>Introduction to NEST Desktop</td>
 </tr>
 <tr>
-<td class="timecell"><noscript>17:30</noscript>17:30</td>
+<td class="timecell"><noscript>16:45</noscript>16:45</td>
 <td>Lunch break/social</td>
+</tr>
+<tr>
+<td class="timecell"><noscript>17:15</noscript>17:15</td>
+<td>Hands-on with NEST Desktop</td>
 </tr>
 <tr>
 <td class="timecell"><noscript>18:00</noscript>18:00</td>
