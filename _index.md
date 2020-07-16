@@ -268,7 +268,7 @@ You can also run the software on a local computer. We suggest using two Docker i
   docker run -i -p 5000:5000 -p 8000:8000 -t babsey/nest-desktop
   ```
 
-  You can then access the server in your browser by navigating to the URL [http//localhost:8000](http://localhost:8000).
+  You can then access the server in your browser by navigating to the URL [http://localhost:8000](http://localhost:8000).
 
 
 ## Organisation
