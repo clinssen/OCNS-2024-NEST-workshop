@@ -296,16 +296,16 @@ NESTML is a domain-specific modeling language and code-generation toolchain. It 
 <pre><code>docker pull clifzju/nest-nestml-jupyterlab-ocns-tutorial</code></pre>
 <p>Then run the image while forwarding the port:</p>
 <pre><code>docker run -i -d -p 7003:7003 -t clifzju/nest-nestml-jupyterlab-ocns-tutorial</code></pre>
-<p>You can then access the server in your browser by navigating to the URL <a href="http://localhost:7003" class="uri">http://localhost:7003</a>.</p></li>
-<li><p><a href="https://github.com/clinssen/OCNS-2020-workshop/tree/master/docker_containers/nest-desktop-ocns-tutorial">NEST Desktop server</a></p>
-<p>Slightly customised image based on the official <a href="https://nest-desktop.readthedocs.io/en/latest/deployer/deploy-docker.html">NEST Desktop docker image</a>.</p>
+<p>You can then access the server in your browser by navigating to the URL <a href="http://localhost:7003" class="uri">http://localhost:7003</a>.</p>
+<p>The Docker container can be started in interactive mode (giving you a shell prompt) by omitting the <code>-d</code> parameter.</p></li>
+<li><p><a href="https://nest-desktop.readthedocs.io/en/latest/deployer/deploy-docker.html?highlight=docker">NEST Desktop server</a></p>
+<p>For local installation, we recommend to use the official NEST Desktop Docker image and instructions. Full instructions can be found at: <a href="https://nest-desktop.readthedocs.io/en/latest/deployer/deploy-docker.html?highlight=docker" class="uri">https://nest-desktop.readthedocs.io/en/latest/deployer/deploy-docker.html?highlight=docker</a>.</p>
 <p>The image is available via DockerHub. To install:</p>
-<pre><code>docker pull clifzju/nest-desktop-ocns-tutorial</code></pre>
+<pre><code>docker pull babsey/nest-desktop</code></pre>
 <p>Then run the image while forwarding the ports:</p>
-<pre><code>docker run -i -d -p 7000:5000 -p 7001:8000 -t clifzju/nest-desktop-ocns-tutorial</code></pre>
-<p>You can then access the server in your browser by navigating to the URL <a href="http://localhost:7001">http//localhost:7001</a>.</p></li>
+<pre><code>docker run -i -p 5000:5000 -p 8000:8000 -t babsey/nest-desktop</code></pre>
+<p>You can then access the server in your browser by navigating to the URL <a href="http://localhost:8000">http//localhost:8000</a>.</p></li>
 </ul>
-<p>You can run Docker containers interactively by omitting the <code>-d</code> parameter.</p>
 <h2 id="organisation">Organisation</h2>
 <p>This tutorial is organised by, alphabetically, <a href="https://www.fz-juelich.de/SharedDocs/Personen/IAS/JSC/EN/staff/linssen_c.html">Charl Linssen</a> (Forschungszentrum Jülich, Germany), <a href="https://www.fz-juelich.de/SharedDocs/Personen/INM/INM-6/EN/staff/Duarte_Renato.html?nn=1789538">Renato Duarte</a> (ibid.) and <a href="https://www.uni-trier.de/index.php?id=73522&amp;L=0">Sebastian Spreizer</a> (University of Trier, Germany). For general inquiries, please contact Charl at <a href="mailto:c.linssen@fz-juelich.de">c.linssen@fz-juelich.de</a>.</p>
 <h2 id="acknowledgements">Acknowledgements</h2>

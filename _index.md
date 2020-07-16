@@ -250,25 +250,25 @@ You can also run the software on a local computer. We suggest using two Docker i
 
   You can then access the server in your browser by navigating to the URL [http://localhost:7003](http://localhost:7003).
 
-* [NEST Desktop server](https://github.com/clinssen/OCNS-2020-workshop/tree/master/docker_containers/nest-desktop-ocns-tutorial)
+  The Docker container can be started in interactive mode (giving you a shell prompt) by omitting the ``-d`` parameter.
 
-  Slightly customised image based on the official [NEST Desktop docker image](https://nest-desktop.readthedocs.io/en/latest/deployer/deploy-docker.html).
+* [NEST Desktop server](https://nest-desktop.readthedocs.io/en/latest/deployer/deploy-docker.html?highlight=docker)
+
+  For local installation, we recommend to use the official NEST Desktop Docker image and instructions. Full instructions can be found at: [https://nest-desktop.readthedocs.io/en/latest/deployer/deploy-docker.html?highlight=docker](https://nest-desktop.readthedocs.io/en/latest/deployer/deploy-docker.html?highlight=docker).
 
   The image is available via DockerHub. To install:
 
   ```
-  docker pull clifzju/nest-desktop-ocns-tutorial
+  docker pull babsey/nest-desktop
   ```
 
   Then run the image while forwarding the ports:
 
   ```
-  docker run -i -d -p 7000:5000 -p 7001:8000 -t clifzju/nest-desktop-ocns-tutorial
+  docker run -i -p 5000:5000 -p 8000:8000 -t babsey/nest-desktop
   ```
 
-  You can then access the server in your browser by navigating to the URL [http//localhost:7001](http://localhost:7001).
-
-You can run Docker containers interactively by omitting the ``-d`` parameter.
+  You can then access the server in your browser by navigating to the URL [http//localhost:8000](http://localhost:8000).
 
 
 ## Organisation
