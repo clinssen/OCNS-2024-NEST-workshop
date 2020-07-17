@@ -172,30 +172,30 @@ function printTable(el, in_tz) {
 </tr>
 <tr>
 <td class="timecell"><noscript>19:00</noscript>19:00</td>
-<td>(break for CNS2020 keynote by Matt Botvinick)</td>
+<td>Coffee/tea break</td>
 </tr>
 <tr>
-<td class="timecell"><noscript>20:15</noscript>20:15</td>
+<td class="timecell"><noscript>19:15</noscript>19:15</td>
 <td>Introduction to NESTML</td>
 </tr>
 <tr>
-<td class="timecell"><noscript>20:45</noscript>20:45</td>
+<td class="timecell"><noscript>19:45</noscript>19:45</td>
 <td>Hands-on with NESTML and Jupyter Notebooks</td>
 </tr>
 <tr>
-<td class="timecell"><noscript>21:15</noscript>21:15</td>
+<td class="timecell"><noscript>20:15</noscript>20:15</td>
 <td>Hands-on with balanced network exercises</td>
 </tr>
 <tr>
-<td class="timecell"><noscript>21:45</noscript>21:45</td>
+<td class="timecell"><noscript>20:45</noscript>20:45</td>
 <td>Coffee break/social</td>
 </tr>
 <tr>
-<td class="timecell"><noscript>22:15</noscript>22:15</td>
+<td class="timecell"><noscript>22:15</noscript>21:15</td>
 <td>Hands-on with balanced network (continued)</td>
 </tr>
 <tr>
-<td class="timecell"><noscript>23:00</noscript>23:00</td>
+<td class="timecell"><noscript>21:45</noscript>21:45</td>
 <td>Closing</td>
 </tr>
 </table>
