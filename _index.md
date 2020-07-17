@@ -256,9 +256,9 @@ You can also run the software on a local computer. We suggest using two Docker i
 
   The Docker container can be started in interactive mode (giving you a shell prompt) by omitting the ``-d`` parameter.
 
-* [NEST Desktop server](https://nest-desktop.readthedocs.io/en/latest/deployer/deploy-docker.html?highlight=docker)
+* [NEST Desktop server](https://nest-desktop.readthedocs.io/en/latest/deployer/deploy-docker.html)
 
-  For local installation, we recommend to use the official NEST Desktop Docker image and instructions. Full instructions can be found at: [https://nest-desktop.readthedocs.io/en/latest/deployer/deploy-docker.html?highlight=docker](https://nest-desktop.readthedocs.io/en/latest/deployer/deploy-docker.html?highlight=docker).
+  For local installation, we recommend to use the official NEST Desktop Docker image and instructions. Full instructions can be found at: [https://nest-desktop.readthedocs.io/en/latest/deployer/deploy-docker.html](https://nest-desktop.readthedocs.io/en/latest/deployer/deploy-docker.html).
 
   The image is available via DockerHub. To install:
 
