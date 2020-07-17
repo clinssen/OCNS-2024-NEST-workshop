@@ -2,7 +2,7 @@ FROM nestsim/nest:latest
 
 RUN apt-get update && apt-get install -y build-essential python3-dev python3-pip git nodejs curl cmake libboost-all-dev wget libncurses-dev libreadline-dev
 RUN python3 -m pip install --upgrade pip setuptools wheel
-RUN python3 -m pip install uwsgi jupyterlab scikit-learn nestml
+RUN python3 -m pip install uwsgi jupyterlab scikit-learn nestml tqdm
 
 # add user 'nest'
 RUN adduser --disabled-login --gecos 'NEST' --home /home/nest nest && \
