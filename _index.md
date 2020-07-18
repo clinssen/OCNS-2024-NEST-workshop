@@ -275,6 +275,11 @@ You can also run the software on a local computer. We suggest using two Docker i
   You can then access the server in your browser by navigating to the URL [http://localhost:8000](http://localhost:8000).
 
 
+## Feedback
+
+If you participated in (any part) of this tutorial, we value your feedback! Please take a moment to fill in our short feedback form at [https://forms.gle/yv9MwmAKJugTs2mR9](https://forms.gle/yv9MwmAKJugTs2mR9).
+
+
 ## Organisation
 
 This tutorial is organised by, alphabetically, [Charl Linssen](https://www.fz-juelich.de/SharedDocs/Personen/IAS/JSC/EN/staff/linssen_c.html) (Forschungszentrum Jülich, Germany), [Renato Duarte](https://www.fz-juelich.de/SharedDocs/Personen/INM/INM-6/EN/staff/Duarte_Renato.html?nn=1789538) (ibid.) and [Sebastian Spreizer](https://www.uni-trier.de/index.php?id=73522&L=0) (University of Trier, Germany). For general inquiries, please contact Charl at <a href="mailto:c.linssen@fz-juelich.de">c.linssen@fz-juelich.de</a>.
@@ -294,7 +299,6 @@ We acknowledge the use of [Fenix Infrastructure](https://fenix-ri.eu) resources,
 <p class="copyright" style="color: #cccccc">Slate theme maintained by <a href="https://github.com/pages-themes">pages-themes</a> &bullet; Published with <a href="https://pages.github.com">GitHub Pages</a> &bullet; Timezone magic thanks to <a href="https://momentjs.com/">moment.js</a></p>
 </footer>
 </div>
-
 
 
 
