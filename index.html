@@ -85,7 +85,7 @@ Hands-on with the NEST Desktop GUI and NESTML code generation
 <script src="moment.js"></script>
 <script src="moment-timezone-with-data.js"></script>
 <p style="margin-top: -1em; text-align: center; font-style: italic !important">
-An online tutorial at the <a href="https://www.cnsorg.org/cns-2020">29th Annual Computational Neuroscience Meeting</a>, July 18th, 2020
+An online tutorial at the <a href="https://www.cnsorg.org/cns-2020">29th Annual Computational Neuroscience Meeting</a>, July 3rd, 2021
 </p>
 <h2 id="description">Description</h2>
 <p>NEST is established community software for the simulation of spiking neuronal network models capturing the full detail of biological network structures [1]. The simulator runs efficiently on a range of architectures from laptops to supercomputers [2]. Many peer-reviewed neuroscientific studies have used NEST as a simulation tool over the past 20 years. More recently, it has become a reference code for research on neuromorphic hardware systems [3].</p>
@@ -97,7 +97,7 @@ An online tutorial at the <a href="https://www.cnsorg.org/cns-2020">29th Annual 
 <p>[3] Gutzen R., von Papen, M., Trensch G., Quaglio P. Grün S., Denker M. (2018) Reproducible Neural Network Simulations: Statistical Methods for Model Validation on the Level of Network Activity Data. Frontiers in Neuroinformatics 12 (90)</p>
 <h2 id="schedule">Schedule</h2>
 <script>
-var start_time = moment.tz("2020-07-18 12:00", "Europe/Berlin");
+var start_time = moment.tz("2021-07-03 15:00", "Europe/Berlin");
 
 s = "<label for=\"tz-selector\">Timezone:&nbsp;</label>";
 s += "<select class=\"select-css\" name=\"tz-selector\" id=\"tz-selector\" onChange=\"printTable(document.getElementById('schedule'), document.getElementById('tz-selector').value);\">";
@@ -292,33 +292,33 @@ NEST Desktop is a web-based GUI application for NEST Simulator. It enables the r
 NESTML is a domain-specific modeling language and code-generation toolchain. It supports the specification of neuron models in an intuitive and concise syntax. Optimised code generation for the target simulation platform couples a highly accessible language with good simulation performance.
 </p>
 <h2 id="registration">Registration</h2>
-<p>Please don’t forget to register for the conference. Registration is free at <a href="https://www.cnsorg.org/cns-2020" class="uri">https://www.cnsorg.org/cns-2020</a>.</p>
+<p>Please don’t forget to register for the conference at <a href="https://www.cnsorg.org/cns-2021">https://www.cnsorg.org/cns-2021</a>.</p>
 <h2 id="connection-details">Connection details</h2>
-<p>To allow for interactive sessions, tutorials will run as “virtual rooms” (i.e. video calls) in CNS*2020. The platform is <a href="https://zoom.us/">Zoom</a>. It can run in your browser, and no account or installation is required. In some cases, installing the software on your local computer can improve the quality of the video and audio.</p>
+<p>To allow for interactive sessions, tutorials will run as “virtual rooms” (i.e. video calls) in CNS*2021. The platform is <a href="https://zoom.us/">Zoom</a>. It can run in your browser, and no account or installation is required. In some cases, installing the software on your local computer can improve the quality of the video and audio.</p>
 <p>Tutorials are not recorded and are not livestreamed events on YouTube.</p>
-<p><strong>The link for the tutorial video stream has been announced on the <a href="https://cns2020online.sched.com">Sched instance for CNS*2020</a></strong></p>
+<p><strong>The link for the tutorial video stream will been announced on the <a href="https://cns2021online.sched.com">Sched instance for CNS*2021</a></strong></p>
 <h2 id="software-requirements">Software requirements</h2>
 <p>We will provide login details for virtual machines on Human Brain Project (EBRAINS) infrastructure to registered participants. You will be able to access the required software directly from your browser, without requiring any installation. Access is provided to a NEST Desktop instance, as well as a <a href="https://jupyterhub.readthedocs.io/">JupyterHub</a> environment that includes NEST Simulator and NESTML.</p>
 <p>You can also run the software on a local computer. We suggest using two Docker images that we provide:</p>
 <ul>
-<li><p><a href="https://github.com/clinssen/OCNS-2020-workshop/tree/master/docker_containers/nest-nestml-jupyterlab-ocns-tutorial">Jupyter Notebook server with NEST and NESTML support</a></p>
+<li><p><a href="https://github.com/clinssen/OCNS-2021-workshop/tree/master/docker_containers/nest-nestml-jupyterlab-ocns-tutorial">Jupyter Notebook server with NEST and NESTML support</a></p>
 <p>Launches a Jupyter Notebook server on localhost at port 7003. The password is: <strong>hellocns2020</strong></p>
 <p>The image is available via DockerHub. To install:</p>
 <pre><code>docker pull clifzju/nest-nestml-jupyterlab-ocns-tutorial</code></pre>
 <p>Then run the image while forwarding the port:</p>
 <pre><code>docker run -i -d -p 7003:7003 -t clifzju/nest-nestml-jupyterlab-ocns-tutorial</code></pre>
-<p>You can then access the server in your browser by navigating to the URL <a href="http://localhost:7003" class="uri">http://localhost:7003</a>.</p>
+<p>You can then access the server in your browser by navigating to the URL <a href="http://localhost:7003">http://localhost:7003</a>.</p>
 <p>The Docker container can be started in interactive mode (giving you a shell prompt) by omitting the <code>-d</code> parameter.</p></li>
 <li><p><a href="https://nest-desktop.readthedocs.io/en/latest/deployer/deploy-docker.html">NEST Desktop server</a></p>
-<p>For local installation, we recommend to use the official NEST Desktop Docker image and instructions. Full instructions can be found at: <a href="https://nest-desktop.readthedocs.io/en/latest/deployer/deploy-docker.html" class="uri">https://nest-desktop.readthedocs.io/en/latest/deployer/deploy-docker.html</a>.</p>
+<p>For local installation, we recommend to use the official NEST Desktop Docker image and instructions. Full instructions can be found at: <a href="https://nest-desktop.readthedocs.io/en/latest/deployer/deploy-docker.html">https://nest-desktop.readthedocs.io/en/latest/deployer/deploy-docker.html</a>.</p>
 <p>The image is available via DockerHub. To install:</p>
 <pre><code>docker pull babsey/nest-desktop</code></pre>
 <p>Then run the image while forwarding the ports:</p>
 <pre><code>docker run -i -p 5000:5000 -p 8000:8000 -t babsey/nest-desktop</code></pre>
-<p>You can then access the server in your browser by navigating to the URL <a href="http://localhost:8000" class="uri">http://localhost:8000</a>.</p></li>
+<p>You can then access the server in your browser by navigating to the URL <a href="http://localhost:8000">http://localhost:8000</a>.</p></li>
 </ul>
 <h2 id="feedback">Feedback</h2>
-<p>If you participated in (any part) of this tutorial, we value your feedback! Please take a moment to fill in our short feedback form at <a href="https://forms.gle/yv9MwmAKJugTs2mR9" class="uri">https://forms.gle/yv9MwmAKJugTs2mR9</a>.</p>
+<p>If you participated in (any part) of this tutorial, we value your feedback! Please take a moment to fill in our short feedback form at <a href="https://forms.gle/yv9MwmAKJugTs2mR9">https://forms.gle/yv9MwmAKJugTs2mR9</a>.</p>
 <h2 id="organisation">Organisation</h2>
 <p>This tutorial is organised by, alphabetically, <a href="https://www.fz-juelich.de/SharedDocs/Personen/IAS/JSC/EN/staff/linssen_c.html">Charl Linssen</a> (Forschungszentrum Jülich, Germany), <a href="https://www.fz-juelich.de/SharedDocs/Personen/INM/INM-6/EN/staff/Duarte_Renato.html?nn=1789538">Renato Duarte</a> (ibid.) and <a href="https://www.uni-trier.de/index.php?id=73522&amp;L=0">Sebastian Spreizer</a> (University of Trier, Germany). For general inquiries, please contact Charl at <a href="mailto:c.linssen@fz-juelich.de">c.linssen@fz-juelich.de</a>.</p>
 <h2 id="acknowledgements">Acknowledgements</h2>
