@@ -1,5 +1,5 @@
 ---
-title: "New interfaces for teaching with NEST - CNS*2020"
+title: "New interfaces for teaching with NEST - CNS*2021"
 ---
 
 <!-- HEADER -->
@@ -88,7 +88,7 @@ title: "New interfaces for teaching with NEST - CNS*2020"
 <script src="moment.js"></script>
 <script src="moment-timezone-with-data.js"></script>
 
-<p style="margin-top: -1em; text-align: center; font-style: italic !important">An online tutorial at the [29th Annual Computational Neuroscience Meeting](https://www.cnsorg.org/cns-2020), July 18th, 2020</p>
+<p style="margin-top: -1em; text-align: center; font-style: italic !important">An online tutorial at the [29th Annual Computational Neuroscience Meeting](https://www.cnsorg.org/cns-2020), July 3rd, 2021</p>
 
 ## Description
 
@@ -112,7 +112,7 @@ After a quick overview of the current status of NEST and upcoming new functional
 ## Schedule
 
 <script>
-var start_time = moment.tz("2020-07-18 12:00", "Europe/Berlin");
+var start_time = moment.tz("2021-07-03 15:00", "Europe/Berlin");
 
 s = "<label for=\"tz-selector\">Timezone:&nbsp;</label>";
 s += "<select class=\"select-css\" name=\"tz-selector\" id=\"tz-selector\" onChange=\"printTable(document.getElementById('schedule'), document.getElementById('tz-selector').value);\">";
@@ -218,16 +218,16 @@ function printTable(el, in_tz) {
 
 ## Registration
 
-Please don't forget to register for the conference. Registration is free at [https://www.cnsorg.org/cns-2020](https://www.cnsorg.org/cns-2020).
+Please don't forget to register for the conference at [https://www.cnsorg.org/cns-2021](https://www.cnsorg.org/cns-2021).
 
 
 ## Connection details
 
-To allow for interactive sessions, tutorials will run as “virtual rooms” (i.e. video calls) in CNS*2020. The platform is [Zoom](https://zoom.us/). It can run in your browser, and no account or installation is required. In some cases, installing the software on your local computer can improve the quality of the video and audio.
+To allow for interactive sessions, tutorials will run as “virtual rooms” (i.e. video calls) in CNS*2021. The platform is [Zoom](https://zoom.us/). It can run in your browser, and no account or installation is required. In some cases, installing the software on your local computer can improve the quality of the video and audio.
 
 Tutorials are not recorded and are not livestreamed events on YouTube.
 
-**The link for the tutorial video stream has been announced on the [Sched instance for CNS*2020](https://cns2020online.sched.com)**
+**The link for the tutorial video stream will been announced on the [Sched instance for CNS*2021](https://cns2021online.sched.com)**
 
 
 ## Software requirements
@@ -236,7 +236,7 @@ We will provide login details for virtual machines on Human Brain Project (EBRAI
 
 You can also run the software on a local computer. We suggest using two Docker images that we provide:
 
-* [Jupyter Notebook server with NEST and NESTML support](https://github.com/clinssen/OCNS-2020-workshop/tree/master/docker_containers/nest-nestml-jupyterlab-ocns-tutorial)
+* [Jupyter Notebook server with NEST and NESTML support](https://github.com/clinssen/OCNS-2021-workshop/tree/master/docker_containers/nest-nestml-jupyterlab-ocns-tutorial)
 
   Launches a Jupyter Notebook server on localhost at port 7003. The password is: **hellocns2020**
 
