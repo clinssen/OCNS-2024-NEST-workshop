@@ -112,7 +112,7 @@ After a quick overview of the current status of NEST and upcoming new functional
 ## Schedule
 
 <script>
-var start_time = moment.tz("2021-07-03 15:00", "Europe/Berlin");
+var start_time = moment.tz("2021-07-03 15:00", "Europe/Berlin"); // !!! also update start time in the <noscript> table in plain HTML
 
 s = "<label for=\"tz-selector\">Timezone:&nbsp;</label>";
 s += "<select class=\"select-css\" name=\"tz-selector\" id=\"tz-selector\" onChange=\"printTable(document.getElementById('schedule'), document.getElementById('tz-selector').value);\">";
@@ -151,51 +151,31 @@ function printTable(el, in_tz) {
 <th>Description</th>
 </tr>
 <tr>
-<td class="timecell"><noscript>16:00</noscript>16:00</td>
+<td class="timecell"><noscript>15:00</noscript>15:00</td>
 <td>Welcome and introduction to NEST Simulator</td>
 </tr>
 <tr>
-<td class="timecell"><noscript>16:30</noscript>16:30</td>
-<td>Introduction to NEST Desktop</td>
+<td class="timecell"><noscript>15:15</noscript>15:15</td>
+<td>Introduction and hands-on with NEST Desktop</td>
 </tr>
 <tr>
-<td class="timecell"><noscript>16:45</noscript>16:45</td>
+<td class="timecell"><noscript>16:00</noscript>16:00</td>
+<td>Introduction to synaptic plasticity</td>
+</tr>
+<tr>
+<td class="timecell"><noscript>16:15</noscript>16:15</td>
 <td>Lunch break/social</td>
 </tr>
 <tr>
-<td class="timecell"><noscript>17:15</noscript>17:15</td>
-<td>Hands-on with NEST Desktop</td>
+<td class="timecell"><noscript>16:30</noscript>16:30</td>
+<td>Synaptic plasticity models in NESTML</td>
+</tr>
+<tr>
+<td class="timecell"><noscript>17:00</noscript>17:00</td>
+<td>Neural network models in NEST Simulator</td>
 </tr>
 <tr>
 <td class="timecell"><noscript>18:00</noscript>18:00</td>
-<td>Hands-on running NEST from Jupyter Notebooks</td>
-</tr>
-<tr>
-<td class="timecell"><noscript>19:00</noscript>19:00</td>
-<td>Coffee/tea break</td>
-</tr>
-<tr>
-<td class="timecell"><noscript>19:15</noscript>19:15</td>
-<td>Introduction to NESTML</td>
-</tr>
-<tr>
-<td class="timecell"><noscript>19:45</noscript>19:45</td>
-<td>Hands-on with NESTML and Jupyter Notebooks</td>
-</tr>
-<tr>
-<td class="timecell"><noscript>20:15</noscript>20:15</td>
-<td>Hands-on with balanced network exercises</td>
-</tr>
-<tr>
-<td class="timecell"><noscript>20:45</noscript>20:45</td>
-<td>Coffee break/social</td>
-</tr>
-<tr>
-<td class="timecell"><noscript>22:15</noscript>21:15</td>
-<td>Hands-on with balanced network (continued)</td>
-</tr>
-<tr>
-<td class="timecell"><noscript>21:45</noscript>21:45</td>
 <td>Closing</td>
 </tr>
 </table>
