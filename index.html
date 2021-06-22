@@ -85,7 +85,7 @@ Hands-on with the NEST Desktop GUI and NESTML code generation
 <script src="moment.js"></script>
 <script src="moment-timezone-with-data.js"></script>
 <p style="margin-top: -1em; text-align: center; font-style: italic !important">
-An online tutorial at the <a href="https://www.cnsorg.org/cns-2020">29th Annual Computational Neuroscience Meeting</a>, July 3rd, 2021
+An online tutorial at the <a href="https://www.cnsorg.org/cns-2020">30th Annual Computational Neuroscience Meeting</a>, July 3rd, 2021
 </p>
 <h2 id="description">Description</h2>
 <p>NEST is established community software for the simulation of spiking neuronal network models capturing the full detail of biological network structures [1]. The simulator runs efficiently on a range of architectures from laptops to supercomputers [2]. Many peer-reviewed neuroscientific studies have used NEST as a simulation tool over the past 20 years. More recently, it has become a reference code for research on neuromorphic hardware systems [3].</p>
@@ -127,6 +127,11 @@ function printTable(el, in_tz) {
         item.innerHTML = "<noscript>" + berlin_time + "</noscript>" + new_time.format('HH:mm');
     }
 }
+
+window.addEventListener('load', (event) => {
+    printTable(document.getElementById('schedule'), document.getElementById('tz-selector').value);
+});
+
 </script>
 <div id="schedule" name="schedule">
 <table>
@@ -143,7 +148,6 @@ Description
 <noscript>
 15:00
 </noscript>
-15:00
 </td>
 <td>
 Welcome and introduction to NEST Simulator
@@ -154,7 +158,6 @@ Welcome and introduction to NEST Simulator
 <noscript>
 15:15
 </noscript>
-15:15
 </td>
 <td>
 Introduction and hands-on with NEST Desktop
@@ -165,7 +168,6 @@ Introduction and hands-on with NEST Desktop
 <noscript>
 16:00
 </noscript>
-16:00
 </td>
 <td>
 Introduction to synaptic plasticity
@@ -176,7 +178,6 @@ Introduction to synaptic plasticity
 <noscript>
 16:15
 </noscript>
-16:15
 </td>
 <td>
 Lunch break/social
@@ -187,7 +188,6 @@ Lunch break/social
 <noscript>
 16:30
 </noscript>
-16:30
 </td>
 <td>
 Synaptic plasticity models in NESTML
@@ -198,7 +198,6 @@ Synaptic plasticity models in NESTML
 <noscript>
 17:00
 </noscript>
-17:00
 </td>
 <td>
 Neural network models in NEST Simulator
@@ -209,7 +208,6 @@ Neural network models in NEST Simulator
 <noscript>
 18:00
 </noscript>
-18:00
 </td>
 <td>
 Closing
@@ -225,7 +223,7 @@ Closing
 NEST Simulator is a spiking neuron simulator which specialises in point neurons and neurons with few comparments. It can simulate synaptic plasticity, structural plasticity, gap junctions and countless other features on machines ranging from home PCs to high-performance computing systems.
 </p>
 <div style="text-align:center">
-<a href="https://nest-desktop.readthedocs.io/"><img src="https://nest-desktop.readthedocs.io/en/latest/_images/nest-desktop-logo.png" border="0" width="240" height="222"></a><br><a href="https://nest-desktop.readthedocs.io/"><span style="font-size:120%; font-weight: 120%">NEST Desktop</span></a>
+<a href="https://nest-desktop.readthedocs.io/"><img src="https://nest-desktop.readthedocs.io/en/v2.5/_images/nest-desktop-logo.png" border="0" width="240" height="222"></a><br><a href="https://nest-desktop.readthedocs.io/"><span style="font-size:120%; font-weight: 120%">NEST Desktop</span></a>
 </div>
 <p>
 NEST Desktop is a web-based GUI application for NEST Simulator. It enables the rapid construction, parametrization, and instrumentation of neuronal network models.
@@ -265,7 +263,8 @@ NESTML is a domain-specific modeling language and code-generation toolchain. It 
 <h2 id="feedback">Feedback</h2>
 <p>If you participated in (any part) of this tutorial, we value your feedback! Please take a moment to fill in our short feedback form at <a href="https://forms.gle/yv9MwmAKJugTs2mR9">https://forms.gle/yv9MwmAKJugTs2mR9</a>.</p>
 <h2 id="organisation">Organisation</h2>
-<p>This tutorial is organised by, alphabetically, <a href="https://www.fz-juelich.de/SharedDocs/Personen/IAS/JSC/EN/staff/linssen_c.html">Charl Linssen</a> (Forschungszentrum Jülich, Germany), <a href="https://www.fz-juelich.de/SharedDocs/Personen/INM/INM-6/EN/staff/Duarte_Renato.html?nn=1789538">Renato Duarte</a> (ibid.) and <a href="https://www.uni-trier.de/index.php?id=73522&amp;L=0">Sebastian Spreizer</a> (University of Trier, Germany). For general inquiries, please contact Charl at <a href="mailto:c.linssen@fz-juelich.de">c.linssen@fz-juelich.de</a>.</p>
+<p>This tutorial is organised by Charl Linssen (JARA-Institute, Jülich, Germany), Barna Zajzon (Jülich Research Centre, Jülich, and RWTH Aachen University, Aachen, Germany), Sebastian Spreizer (University of Trier, Germany), Jasper Albers (Jülich Research Centre, Jülich, and RWTH Aachen University, Aachen, Germany), and Dennis Terhorst (Jülich Research Centre, Jülich, and RWTH Aachen University, Aachen, Germany).</p>
+<p>For general inquiries, please contact Charl at <a href="mailto:c.linssen@fz-juelich.de">c.linssen@fz-juelich.de</a>.</p>
 <h2 id="acknowledgements">Acknowledgements</h2>
 <p>We acknowledge the use of <a href="https://fenix-ri.eu">Fenix Infrastructure</a> resources, which are partially funded from the European Union’s Horizon 2020 research and innovation programme through the ICEI project under the grant agreement No. 800858.</p>
 </section>

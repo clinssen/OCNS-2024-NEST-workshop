@@ -88,7 +88,7 @@ title: "New interfaces for teaching with NEST - CNS*2021"
 <script src="moment.js"></script>
 <script src="moment-timezone-with-data.js"></script>
 
-<p style="margin-top: -1em; text-align: center; font-style: italic !important">An online tutorial at the [29th Annual Computational Neuroscience Meeting](https://www.cnsorg.org/cns-2020), July 3rd, 2021</p>
+<p style="margin-top: -1em; text-align: center; font-style: italic !important">An online tutorial at the [30th Annual Computational Neuroscience Meeting](https://www.cnsorg.org/cns-2020), July 3rd, 2021</p>
 
 ## Description
 
@@ -142,6 +142,11 @@ function printTable(el, in_tz) {
 		item.innerHTML = "<noscript>" + berlin_time + "</noscript>" + new_time.format('HH:mm');
 	}
 }
+
+window.addEventListener('load', (event) => {
+	printTable(document.getElementById('schedule'), document.getElementById('tz-selector').value);
+});
+
 </script>
 
 <div id="schedule" name="schedule">
@@ -151,31 +156,31 @@ function printTable(el, in_tz) {
 <th>Description</th>
 </tr>
 <tr>
-<td class="timecell"><noscript>15:00</noscript>15:00</td>
+<td class="timecell"><noscript>15:00</noscript></td>
 <td>Welcome and introduction to NEST Simulator</td>
 </tr>
 <tr>
-<td class="timecell"><noscript>15:15</noscript>15:15</td>
+<td class="timecell"><noscript>15:15</noscript></td>
 <td>Introduction and hands-on with NEST Desktop</td>
 </tr>
 <tr>
-<td class="timecell"><noscript>16:00</noscript>16:00</td>
+<td class="timecell"><noscript>16:00</noscript></td>
 <td>Introduction to synaptic plasticity</td>
 </tr>
 <tr>
-<td class="timecell"><noscript>16:15</noscript>16:15</td>
+<td class="timecell"><noscript>16:15</noscript></td>
 <td>Lunch break/social</td>
 </tr>
 <tr>
-<td class="timecell"><noscript>16:30</noscript>16:30</td>
+<td class="timecell"><noscript>16:30</noscript></td>
 <td>Synaptic plasticity models in NESTML</td>
 </tr>
 <tr>
-<td class="timecell"><noscript>17:00</noscript>17:00</td>
+<td class="timecell"><noscript>17:00</noscript></td>
 <td>Neural network models in NEST Simulator</td>
 </tr>
 <tr>
-<td class="timecell"><noscript>18:00</noscript>18:00</td>
+<td class="timecell"><noscript>18:00</noscript></td>
 <td>Closing</td>
 </tr>
 </table>
@@ -187,7 +192,7 @@ function printTable(el, in_tz) {
 
 <p>NEST Simulator is a spiking neuron simulator which specialises in point neurons and neurons with few comparments. It can simulate synaptic plasticity, structural plasticity, gap junctions and countless other features on machines ranging from home PCs to high-performance computing systems.</p>
 
-<div style="text-align:center">[<img src="https://nest-desktop.readthedocs.io/en/latest/_images/nest-desktop-logo.png" border="0" width="240" height="222">](https://nest-desktop.readthedocs.io/)<br>[<span style="font-size:120%; font-weight: 120%">NEST Desktop</span>](https://nest-desktop.readthedocs.io/)</div>
+<div style="text-align:center">[<img src="https://nest-desktop.readthedocs.io/en/v2.5/_images/nest-desktop-logo.png" border="0" width="240" height="222">](https://nest-desktop.readthedocs.io/)<br>[<span style="font-size:120%; font-weight: 120%">NEST Desktop</span>](https://nest-desktop.readthedocs.io/)</div>
 
 <p>NEST Desktop is a web-based GUI application for NEST Simulator. It enables the rapid construction, parametrization, and instrumentation of neuronal network models.</p>
 
@@ -262,7 +267,9 @@ If you participated in (any part) of this tutorial, we value your feedback! Plea
 
 ## Organisation
 
-This tutorial is organised by, alphabetically, [Charl Linssen](https://www.fz-juelich.de/SharedDocs/Personen/IAS/JSC/EN/staff/linssen_c.html) (Forschungszentrum Jülich, Germany), [Renato Duarte](https://www.fz-juelich.de/SharedDocs/Personen/INM/INM-6/EN/staff/Duarte_Renato.html?nn=1789538) (ibid.) and [Sebastian Spreizer](https://www.uni-trier.de/index.php?id=73522&L=0) (University of Trier, Germany). For general inquiries, please contact Charl at <a href="mailto:c.linssen@fz-juelich.de">c.linssen@fz-juelich.de</a>.
+This tutorial is organised by Charl Linssen (JARA-Institute, Jülich, Germany), Barna Zajzon (Jülich Research Centre, Jülich, and RWTH Aachen University, Aachen, Germany), Sebastian Spreizer (University of Trier, Germany), Jasper Albers (Jülich Research Centre, Jülich, and RWTH Aachen University, Aachen, Germany), and Dennis Terhorst (Jülich Research Centre, Jülich, and RWTH Aachen University, Aachen, Germany).
+
+For general inquiries, please contact Charl at <a href="mailto:c.linssen@fz-juelich.de">c.linssen@fz-juelich.de</a>.
 
 
 ## Acknowledgements
