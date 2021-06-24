@@ -14,7 +14,7 @@ cd
 
 jupyter-lab &
 
-git clone https://github.com/clinssen/OCNS-2020-workshop
+git clone https://github.com/clinssen/OCNS-2021-workshop
 
 /bin/bash
 
