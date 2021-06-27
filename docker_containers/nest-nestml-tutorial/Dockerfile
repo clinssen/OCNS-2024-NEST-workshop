@@ -13,7 +13,8 @@ RUN python3 -m pip uninstall -y nestml
 #RUN python3 -m pip install git+https://github.com/nest/nestml
 
 # XXX: we're using the latest synapse prototype code
-RUN python3 -m pip install git+https://github.com/clinssen/nestml.git@jit-third-factor
+#RUN su -c "python3 -m pip install git+https://github.com/clinssen/nestml.git@jit-third-factor" - centos
+RUN git clone https://github.com/clinssen/nestml && cd nestml && git branch -a && git checkout jit-third-factor &&  python3 setup.py install
 
 # add user 'nest'
 RUN adduser --disabled-login --gecos 'NEST' --home /home/nest nest && \
