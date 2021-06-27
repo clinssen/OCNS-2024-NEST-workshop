@@ -5,8 +5,15 @@ RUN apt-get update && apt-get install -y build-essential python3-dev python3-pip
 RUN python3 -m pip install --upgrade pip setuptools wheel
 RUN python3 -m pip install uwsgi jupyterlab scikit-learn tqdm --ignore-installed
 RUN python3 -m pip install git+https://github.com/nest/ode-toolbox
-# RUN python3 -m pip install nestml # XXX: we're using the latest master instead of the latest release!
-RUN python3 -m pip install git+https://github.com/nest/nestml
+
+# RUN python3 -m pip install nestml
+RUN python3 -m pip uninstall -y nestml
+
+# XXX: we're using the latest master instead of the latest release!
+#RUN python3 -m pip install git+https://github.com/nest/nestml
+
+# XXX: we're using the latest synapse prototype code
+RUN python3 -m pip install git+https://github.com/clinssen/nestml.git@jit-third-factor
 
 # add user 'nest'
 RUN adduser --disabled-login --gecos 'NEST' --home /home/nest nest && \
