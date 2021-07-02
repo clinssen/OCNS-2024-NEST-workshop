@@ -1,6 +1,6 @@
 # Configuration file for jupyter-notebook.
 
-c.NotebookApp.password = 'sha1:7a12c3c3439a:d74662fead39f17cabd747faf34a65bd58d135d3' # the password is: hellocns2020
+c.NotebookApp.password = 'sha1:a5c8859c665a:29367d578b5fab6be50b84b407d293afd6814915' # the password is: nest25years
 c.NotebookApp.password_required = True
 
 c.NotebookApp.port = 7003
