@@ -223,7 +223,7 @@ You can also run the software on a local computer. We suggest using two Docker i
 
 * [Jupyter Notebook server with NEST and NESTML support](https://github.com/clinssen/OCNS-2021-workshop/tree/master/docker_containers/nest-nestml-jupyterlab-ocns-tutorial)
 
-  Launches a Jupyter Notebook server on localhost at port 7003. The password is: **hellocns2020**
+  Launches a Jupyter Notebook server on localhost at port 7003. The password is: **nest25years**
 
   The image is available via DockerHub. To install:
 
@@ -241,23 +241,9 @@ You can also run the software on a local computer. We suggest using two Docker i
 
   The Docker container can be started in interactive mode (giving you a shell prompt) by omitting the ``-d`` parameter.
 
-* [NEST Desktop server](https://nest-desktop.readthedocs.io/en/latest/deployer/deploy-docker.html)
+* [NEST Desktop](https://nest-desktop.readthedocs.io/en/latest/deployer/deploy-docker.html)
 
   For local installation, we recommend to use the official NEST Desktop Docker image and instructions. Full instructions can be found at: [https://nest-desktop.readthedocs.io/en/latest/deployer/deploy-docker.html](https://nest-desktop.readthedocs.io/en/latest/deployer/deploy-docker.html).
-
-  The image is available via DockerHub. To install:
-
-  ```
-  docker pull babsey/nest-desktop
-  ```
-
-  Then run the image while forwarding the ports:
-
-  ```
-  docker run -i -p 5000:5000 -p 8000:8000 -t babsey/nest-desktop
-  ```
-
-  You can then access the server in your browser by navigating to the URL [http://localhost:8000](http://localhost:8000).
 
 
 ## Feedback

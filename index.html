@@ -245,20 +245,15 @@ NESTML is a domain-specific modeling language and code-generation toolchain. It 
 <p>You can also run the software on a local computer. We suggest using two Docker images that we provide:</p>
 <ul>
 <li><p><a href="https://github.com/clinssen/OCNS-2021-workshop/tree/master/docker_containers/nest-nestml-jupyterlab-ocns-tutorial">Jupyter Notebook server with NEST and NESTML support</a></p>
-<p>Launches a Jupyter Notebook server on localhost at port 7003. The password is: <strong>hellocns2020</strong></p>
+<p>Launches a Jupyter Notebook server on localhost at port 7003. The password is: <strong>nest25years</strong></p>
 <p>The image is available via DockerHub. To install:</p>
 <pre><code>docker pull clifzju/nest-nestml-jupyterlab-ocns-tutorial</code></pre>
 <p>Then run the image while forwarding the port:</p>
 <pre><code>docker run -i -d -p 7003:7003 -t clifzju/nest-nestml-jupyterlab-ocns-tutorial</code></pre>
 <p>You can then access the server in your browser by navigating to the URL <a href="http://localhost:7003">http://localhost:7003</a>.</p>
 <p>The Docker container can be started in interactive mode (giving you a shell prompt) by omitting the <code>-d</code> parameter.</p></li>
-<li><p><a href="https://nest-desktop.readthedocs.io/en/latest/deployer/deploy-docker.html">NEST Desktop server</a></p>
-<p>For local installation, we recommend to use the official NEST Desktop Docker image and instructions. Full instructions can be found at: <a href="https://nest-desktop.readthedocs.io/en/latest/deployer/deploy-docker.html">https://nest-desktop.readthedocs.io/en/latest/deployer/deploy-docker.html</a>.</p>
-<p>The image is available via DockerHub. To install:</p>
-<pre><code>docker pull babsey/nest-desktop</code></pre>
-<p>Then run the image while forwarding the ports:</p>
-<pre><code>docker run -i -p 5000:5000 -p 8000:8000 -t babsey/nest-desktop</code></pre>
-<p>You can then access the server in your browser by navigating to the URL <a href="http://localhost:8000">http://localhost:8000</a>.</p></li>
+<li><p><a href="https://nest-desktop.readthedocs.io/en/latest/deployer/deploy-docker.html">NEST Desktop</a></p>
+<p>For local installation, we recommend to use the official NEST Desktop Docker image and instructions. Full instructions can be found at: <a href="https://nest-desktop.readthedocs.io/en/latest/deployer/deploy-docker.html">https://nest-desktop.readthedocs.io/en/latest/deployer/deploy-docker.html</a>.</p></li>
 </ul>
 <h2 id="feedback">Feedback</h2>
 <p>If you participated in (any part) of this tutorial, we value your feedback! Please take a moment to fill in our short feedback form at <a href="https://forms.gle/yv9MwmAKJugTs2mR9">https://forms.gle/yv9MwmAKJugTs2mR9</a>.</p>
