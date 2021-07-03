@@ -1,0 +1,90 @@
+
+# If any of the figures changed, tigger a rebuild
+figures = [os.path.join('figures/', name) for name in os.listdir('figures/')]
+
+# downloadlocal
+#   Set to True to download the official beamer theme into this folder, i.e.
+#   install a version in the local directory.
+#
+#   If set to False, beamerthemeJuelich needs to be installed on your system,
+#   e.g. in ~/texmf/tex/latex/beamertheme-juelich/, so that LaTeX can find it
+#   automatically.
+downloadlocal = False
+
+rule build_tex2pdf:
+    '''
+    Build the presentation using pdflatex
+    '''
+    input:
+        figures,
+        {True:['beamerthemeJuelich.sty'], False:[]}[downloadlocal],
+        tex = 'presentation.tex',
+    output:
+        'presentation.pdf',
+    shell:
+        '''
+        pdflatex -shell-escape -interaction=nonstopmode {input.tex}
+        '''
+
+
+rule build_md2pdf:
+    '''
+    [this does not work yet]
+    Build the presentation using pdflatex via pandoc
+    '''
+    input:
+        figures,
+        files = ['presentation.md', 'metadata.yaml'],
+    output:
+        'presentation_md.pdf',
+    shell:
+        '''
+        pandoc -t latex {input.files} -o {output}
+        '''
+
+
+rule get_juelich_beamer_theme:
+    '''
+    This rule downloads the files from juelich beamer theme into the current
+    folder. The HEAD version of inm6_templates repository is used.
+    '''
+    output:
+        'beamercolorthemeJuelich.sty',
+        'beamerfontthemeJuelich.sty',
+        'beamerinnerthemeJuelich.sty',
+        'beamerouterthemeJuelich.sty',
+        'beamerthemeJuelich.sty',
+        'fzj.pdf',
+        'jara.pdf',
+    shell:
+        '''
+        git archive --remote=gitty:inm6_templates "HEAD:talk/latex_official/beamertheme-juelich/" {output} | tar -x
+        '''
+
+rule clean:
+    '''
+    remove all auto-generated files
+    '''
+    params:
+        styles = [
+            'beamercolorthemeJuelich.sty',
+            'beamerfontthemeJuelich.sty',
+            'beamerinnerthemeJuelich.sty',
+            'beamerouterthemeJuelich.sty',
+            'beamerthemeJuelich.sty',
+            'fzj.pdf',
+            'jara.pdf',
+        ],
+        latex = [
+            'presentation.aux',
+            'presentation.log',
+            'presentation.nav',
+            'presentation.out',
+            'presentation.snm',
+            'presentation.toc',
+            'presentation.vrb',
+        ],
+    shell:
+        '''
+        rm -vf {params.styles} {params.latex}
+        '''

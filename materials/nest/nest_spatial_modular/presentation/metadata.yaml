@@ -1,0 +1,14 @@
+
+---
+beamertheme: Juelich
+figurepath: figures/
+title: "Part 1: Introduction to NEST"
+subtitle: "Introduction to the simulation of structurally detailed large-scale neuronal networks"
+author:
+- Alexander van Meegen
+- Dennis Terhorst
+institute: INM-6, IAS-6, INM-10; J{\"u}lich Research Centre
+date: "13 July 2019"
+titlegraphic: nest-logo.pdf
+---
+
