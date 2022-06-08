@@ -1,12 +1,12 @@
 ---
-title: "New interfaces for teaching with NEST - CNS*2021"
+title: "From single-cell modeling to large-scale network dynamics with NEST Simulator"
 ---
 
 <!-- HEADER -->
 <div id="header_wrap" class="outer">
 <header class="inner">
-<h1 id="project_title"><span style="font-size:90% !important">New interfaces for teaching with NEST:</span></h1>
-<h2 id="project_tagline">Hands-on with the NEST Desktop GUI and NESTML code generation</h2>
+<h1 id="project_title"><span style="font-size:90% !important">From single-cell modeling to large-scale network dynamics with NEST Simulator</span></h1>
+<!-- <h2 id="project_tagline">No tagline here</h2> -->
 </header>
 </div>
 
@@ -17,6 +17,10 @@ title: "New interfaces for teaching with NEST - CNS*2021"
 
 <link rel="stylesheet" type="text/css" media="screen" href="https://pages-themes.github.io/slate/assets/css/style.css?v=dd924ed8bde9d034c169c8f6d051bf93723eabbd">
 <style>
+header {
+	text-align: center
+}
+
 /* class applies to select element itself, not a wrapper element */
 .select-css {
     font-family: sans-serif;
@@ -35,7 +39,6 @@ title: "New interfaces for teaching with NEST - CNS*2021"
     background-color: #fff;
     /* note: bg image below uses 2 urls. The first is an svg data uri for the arrow icon, and the second is the gradient. 
         for the icon, if you want to change the color, be sure to use `%23` instead of `#`, since it's a url. You can also swap in a different svg icon or an external image reference
-        
     */
     background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'),
       linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%);
@@ -88,27 +91,48 @@ title: "New interfaces for teaching with NEST - CNS*2021"
 <script src="moment.js"></script>
 <script src="moment-timezone-with-data.js"></script>
 
-<p style="margin-top: -1em; text-align: center; font-style: italic !important">An online tutorial at the [30th Annual Computational Neuroscience Meeting](https://www.cnsorg.org/cns-2020), July 3rd, 2021</p>
+<p style="margin-top: -1em; text-align: center; font-style: italic !important">An on-site tutorial at the [31st Annual Computational Neuroscience Meeting](https://www.cnsorg.org/cns-2022), July 16-20, 2022</p>
+<p style="text-align: center; margin: -1em">—</p>
+<p style="margin-top: 1em; text-align: center; font-style: italic !important">An online tutorial as a [CNS satellite event](https://ocns.github.io/SoftwareWG/pages/software-wg-satellite-tutorials-at-cns-2022.html), July 1st, 2022</p>
 
 ## Description
 
-NEST is established community software for the simulation of spiking neuronal network models capturing the full  detail  of  biological  network  structures  [1].  The  simulator  runs  efficiently  on  a  range  of  architectures  from  laptops  to  supercomputers  [2].  Many  peer-reviewed  neuroscientific  studies have used NEST as a simulation tool over the past 20 years. More recently, it has become a reference code for research on neuromorphic hardware systems [3].
+NEST is an established, open-source simulator for spiking neuronal networks, which can
+capture a high degree of detail of biological network structures while retaining high
+performance and scalability from laptops to HPC [1]. This tutorial provides hands-on
+experience in building and simulating neuron, synapse, and network models. It introduces
+several tools and front-ends to implement modeling ideas most efficiently. Participants do not
+have to install software as all tools can be accessed via the cloud.
 
-This tutorial provides hands-on experience with recent improvements of NEST. In the past, starting out with NEST could be challenging for computational neuroscientists, as models and simulations had to be programmed using SLI, C++ or Python. NEST Desktop changes this: It is an entirely graphical approach to the  construction  and  simulation of neuronal  network  models.  It  runs  installation-free in the browser and has proven its value in several university courses. This opens the  domain  of NEST to the teaching of neuroscience for students with little programming experience.NESTML complements this new interface by enhancing the development process of neuron and synapse models. Advanced researchers often want to study specific features not provided by models already available in NEST. Instead of having to turn to C++, using NESTML they can write down differential equations and necessary state transitions in the mathematical notation they are used to. These descriptions are then automatically processed to generate machine-optimised code.
-
-After a quick overview of the current status of NEST and upcoming new functionality, the tutorial works through a the construction of a balanced network to show how the combination of NEST Desktop and NESTML can be used in the modern workflow of a computational neuroscientist.
+First, we look at NEST Desktop [2], a web-based graphical user interface (GUI), which allows
+the exploration of essential concepts in computational neuroscience without the need to learn
+a programming language. This advances both the quality and speed of teaching in
+computational neuroscience. To get acquainted with the GUI, we will create and analyze a
+balanced two-population network.
+The model is then exported to a Jupyter notebook and endowed with a data-driven spatial
+connectivity profile of the cortex, enabling us to study the propagation of activity. Then, we
+make the synapses in the network plastic and let the network learn a reinforcement learning
+task, whereby the learning rule goes beyond pre-synaptic and post-synaptic spikes by adding
+a dopamine signal as a modulatory third factor. NESTML [3] makes it easy to express this and
+other advanced synaptic plasticity rules and neuron models, and automatically translates
+them into fast simulation code.
+More morphologically detailed models, with a large number of compartments and custom ion
+channels and receptor currents, can also be defined using NESTML. We first implement a
+simple dendritic layout and use it to perform a sequence discrimination task. Next, we
+implement a compartmental layout representing semi-independent subunits and recurrently
+connect several such neurons to elicit an NMDA-spike driven network state.
 
 
 ### Citations
 
-[1] https://nest-simulator.readthedocs.io/
+[1] https://nest-simulator.readthedocs.org/
 
-[2] Jordan J., Ippen T., Helias M., Kitayama I., Sato M., Igarashi J., Diesmann M., Kunkel S. (2018) Extremely Scalable Spiking Neuronal Network Simulation Code: From Laptops to Exascale Computers. Frontiers in Neuroinformatics 12: 2
-	
-[3] Gutzen R., von Papen, M., Trensch G., Quaglio P. Grün S., Denker M. (2018) Reproducible Neural Network Simulations: Statistical Methods for Model Validation on the Level of Network Activity Data. Frontiers in Neuroinformatics 12 (90)
+[2] https://nest-desktop.readthedocs.org/
+
+[3] https://nestml.readthedocs.org/
 
 
-
+<!--
 ## Schedule
 
 <script>
@@ -185,35 +209,38 @@ window.addEventListener('load', (event) => {
 </tr>
 </table>
 </div>
+-->
 
 ## Links
 
-<div style="text-align:center">[<img src="https://nest-simulator.readthedocs.io/en/nest-2.20.1/_static/img/nest_logo.png" border="0">](https://nest-simulator.readthedocs.io/)<br>[<span style="font-size:120%; font-weight: 120%">NEST Simulator</span>](https://nest-simulator.readthedocs.io/)</div>
+<div style="text-align:center">[<img src="https://github.com/clinssen/OCNS-2022-workshop/tree/master/nest_logo.png" border="0">](https://nest-simulator.readthedocs.io/)<br>[<span style="font-size:120%; font-weight: 120%">NEST Simulator</span>](https://nest-simulator.readthedocs.io/)</div>
 
 <p>NEST Simulator is a spiking neuron simulator which specialises in point neurons and neurons with few comparments. It can simulate synaptic plasticity, structural plasticity, gap junctions and countless other features on machines ranging from home PCs to high-performance computing systems.</p>
 
-<div style="text-align:center">[<img src="https://nest-desktop.readthedocs.io/en/v2.5/_images/nest-desktop-logo.png" border="0" width="240" height="222">](https://nest-desktop.readthedocs.io/)<br>[<span style="font-size:120%; font-weight: 120%">NEST Desktop</span>](https://nest-desktop.readthedocs.io/)</div>
+<div style="text-align:center">[<img src="https://github.com/clinssen/OCNS-2022-workshop/tree/master/nest-desktop-logo.png" border="0" width="240" height="222">](https://nest-desktop.readthedocs.io/)<br>[<span style="font-size:120%; font-weight: 120%">NEST Desktop</span>](https://nest-desktop.readthedocs.io/)</div>
 
 <p>NEST Desktop is a web-based GUI application for NEST Simulator. It enables the rapid construction, parametrization, and instrumentation of neuronal network models.</p>
 
-<div style="text-align:center">[<img src="https://nestml.readthedocs.io/en/latest/_static/nestml-logo.png" border="0" width="240" height="73">](https://nestml.readthedocs.io/)<br>[<span style="font-size:120%; font-weight: 120%">NESTML</span>](https://nestml.readthedocs.io/)</div>
+<div style="text-align:center">[<img src="https://github.com/clinssen/OCNS-2022-workshop/tree/master/nestml-logo.png" border="0" width="240" height="73">](https://nestml.readthedocs.io/)<br>[<span style="font-size:120%; font-weight: 120%">NESTML</span>](https://nestml.readthedocs.io/)</div>
 
-<p> NESTML is a domain-specific modeling language and code-generation toolchain. It supports the specification of neuron models in an intuitive and concise syntax. Optimised code generation for the target simulation platform couples a highly accessible language with good simulation performance.</p>
+<p>NESTML is a domain-specific modeling language and code-generation toolchain. It supports the specification of neuron models in an intuitive and concise syntax. Optimised code generation for the target simulation platform couples a highly accessible language with good simulation performance.</p>
 
 
 ## Registration
 
-Please don't forget to register for the conference at [https://www.cnsorg.org/cns-2021](https://www.cnsorg.org/cns-2021).
+Please don't forget to register for the on-site conference at [https://www.cnsorg.org/cns-2022](https://www.cnsorg.org/cns-2022).
 
-
-## Connection details
-
-To allow for interactive sessions, tutorials will run as “virtual rooms” (i.e. video calls) in CNS*2021. The platform is [Zoom](https://zoom.us/). It can run in your browser, and no account or installation is required. In some cases, installing the software on your local computer can improve the quality of the video and audio.
+Free online satellite tutorials are given as part of CNS*2022 between June 27th and July 1st. Registration is free but required at [https://ocns.github.io/SoftwareWG/pages/software-wg-satellite-tutorials-at-cns-2022.html](https://ocns.github.io/SoftwareWG/pages/software-wg-satellite-tutorials-at-cns-2022.html)
 
 Tutorials are not recorded and are not livestreamed events on YouTube.
 
+<!-- ## Connection details
+
+To allow for interactive sessions, tutorials will run as “virtual rooms” (i.e. video calls) in CNS*2022. The platform is [Zoom](https://zoom.us/). It can run in your browser, and no account or installation is required. In some cases, installing the software on your local computer can improve the quality of the video and audio.
+
 **The link for the tutorial video stream will been announced on the [Sched instance for CNS*2021](https://cns2021online.sched.com)**
 
+-->
 
 ## Software requirements
 
@@ -221,7 +248,12 @@ We will provide login details for virtual machines on Human Brain Project (EBRAI
 
 You can also run the software on a local computer. We suggest using two Docker images that we provide:
 
-* [Jupyter Notebook server with NEST and NESTML support](https://github.com/clinssen/OCNS-2021-workshop/tree/master/docker_containers/nest-nestml-jupyterlab-ocns-tutorial)
+* [Jupyter Notebook server with NEST and NESTML support](https://github.com/clinssen/OCNS-2022-workshop/tree/master/docker_containers/nest-nestml-jupyterlab-ocns-tutorial)
+
+https://github.com/clinssen/OCNS-2022-workshop/tree/master/nest-desktop-logo.png
+nest_logo.png
+nestml-logo.png
+
 
   Launches a Jupyter Notebook server on localhost at port 7003. The password is: **nest25years**
 
@@ -253,7 +285,7 @@ If you participated in (any part) of this tutorial, we value your feedback! Plea
 
 ## Organisation
 
-This tutorial is organised by Charl Linssen (JARA-Institute, Jülich, Germany), Barna Zajzon (Jülich Research Centre, Jülich, and RWTH Aachen University, Aachen, Germany), Sebastian Spreizer (University of Trier, Germany), Jasper Albers (Jülich Research Centre, Jülich, and RWTH Aachen University, Aachen, Germany), and Dennis Terhorst (Jülich Research Centre, Jülich, and RWTH Aachen University, Aachen, Germany).
+This tutorial is organised by Jasper Albers (Jülich Research Centre, Jülich, and RWTH Aachen University, Aachen, Germany), Pooja Babu (Jülich Research Centre, Jülich), Joshua Böttcher (Jülich Research Centre, Jülich), Jens Bruchertseifer (University of Trier, Germany), Agnes Korcsak-Gorzo (Jülich Research Centre, Jülich), Charl Linssen (JARA-Institute, Jülich, Germany), Sebastian Spreizer (University of Trier, Germany), Dennis Terhorst (Jülich Research Centre, Jülich and RWTH Aachen University, Aachen, Germany).
 
 For general inquiries, please contact Charl at <a href="mailto:c.linssen@fz-juelich.de">c.linssen@fz-juelich.de</a>.
 
@@ -269,7 +301,8 @@ We acknowledge the use of [Fenix Infrastructure](https://fenix-ri.eu) resources,
 <div id="footer_wrap" class="outer">
 <footer class="inner">
 
-<p class="copyright" style="color: #cccccc">Slate theme maintained by <a href="https://github.com/pages-themes">pages-themes</a> &bullet; Published with <a href="https://pages.github.com">GitHub Pages</a> &bullet; Timezone magic thanks to <a href="https://momentjs.com/">moment.js</a></p>
+<!-- <p class="copyright" style="color: #cccccc">Slate theme maintained by <a href="https://github.com/pages-themes">pages-themes</a> &bullet; Published with <a href="https://pages.github.com">GitHub Pages</a> &bullet; Timezone magic thanks to <a href="https://momentjs.com/">moment.js</a></p> -->
+<p class="copyright" style="color: #cccccc">Slate theme maintained by <a href="https://github.com/pages-themes">pages-themes</a> &bullet; Published with <a href="https://pages.github.com">GitHub Pages</a></p>
 </footer>
 </div>
 

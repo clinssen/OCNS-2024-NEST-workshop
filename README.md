@@ -1,10 +1,12 @@
-# New interfaces for teaching with NEST:
-## Hands-on with the NEST Desktop GUI and NESTML code generation
+# From single-cell modeling to large-scale network dynamics with NEST Simulator
 
-An online tutorial at the 29th Annual Computational Neuroscience Meeting, July 3rd, 2021
+An on-site and online tutorial at the 31st Annual Computational Neuroscience Meeting, July 1st and July 16-20, 2022
 
-Previously, an online tutorial at the 29th Annual Computational Neuroscience Meeting, July 18th, 2020
+Previous editions:
 
-Please see the website at:
+- An online tutorial at the 30th Annual Computational Neuroscience Meeting, July 3rd, 2021
+- An online tutorial at the 29th Annual Computational Neuroscience Meeting, July 18th, 2020
 
-https://clinssen.github.io/OCNS-2021-workshop/index.html
+Please visit the website at:
+
+https://clinssen.github.io/OCNS-2022-workshop/index.html
