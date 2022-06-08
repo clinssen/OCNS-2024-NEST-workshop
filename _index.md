@@ -213,15 +213,15 @@ window.addEventListener('load', (event) => {
 
 ## Links
 
-<div style="text-align:center">[<img src="https://github.com/clinssen/OCNS-2022-workshop/tree/master/nest_logo.png" border="0">](https://nest-simulator.readthedocs.io/)<br>[<span style="font-size:120%; font-weight: 120%">NEST Simulator</span>](https://nest-simulator.readthedocs.io/)</div>
+<div style="text-align:center">[<img src="https://raw.githubusercontent.com/clinssen/OCNS-2022-workshop/master/nest_logo.png" border="0">](https://nest-simulator.readthedocs.io/)<br>[<span style="font-size:120%; font-weight: 120%">NEST Simulator</span>](https://nest-simulator.readthedocs.io/)</div>
 
 <p>NEST Simulator is a spiking neuron simulator which specialises in point neurons and neurons with few comparments. It can simulate synaptic plasticity, structural plasticity, gap junctions and countless other features on machines ranging from home PCs to high-performance computing systems.</p>
 
-<div style="text-align:center">[<img src="https://github.com/clinssen/OCNS-2022-workshop/tree/master/nest-desktop-logo.png" border="0" width="240" height="222">](https://nest-desktop.readthedocs.io/)<br>[<span style="font-size:120%; font-weight: 120%">NEST Desktop</span>](https://nest-desktop.readthedocs.io/)</div>
+<div style="text-align:center">[<img src="https://raw.githubusercontent.com/clinssen/OCNS-2022-workshop/master/nest-desktop-logo.png" border="0" width="240" height="222">](https://nest-desktop.readthedocs.io/)<br>[<span style="font-size:120%; font-weight: 120%">NEST Desktop</span>](https://nest-desktop.readthedocs.io/)</div>
 
 <p>NEST Desktop is a web-based GUI application for NEST Simulator. It enables the rapid construction, parametrization, and instrumentation of neuronal network models.</p>
 
-<div style="text-align:center">[<img src="https://github.com/clinssen/OCNS-2022-workshop/tree/master/nestml-logo.png" border="0" width="240" height="73">](https://nestml.readthedocs.io/)<br>[<span style="font-size:120%; font-weight: 120%">NESTML</span>](https://nestml.readthedocs.io/)</div>
+<div style="text-align:center">[<img src="https://raw.githubusercontent.com/clinssen/OCNS-2022-workshop/master/nestml-logo.png" border="0" width="240" height="73">](https://nestml.readthedocs.io/)<br>[<span style="font-size:120%; font-weight: 120%">NESTML</span>](https://nestml.readthedocs.io/)</div>
 
 <p>NESTML is a domain-specific modeling language and code-generation toolchain. It supports the specification of neuron models in an intuitive and concise syntax. Optimised code generation for the target simulation platform couples a highly accessible language with good simulation performance.</p>
 
@@ -285,7 +285,7 @@ If you participated in (any part) of this tutorial, we value your feedback! Plea
 
 ## Organisation
 
-This tutorial is organised by Jasper Albers (Jülich Research Centre, Jülich, and RWTH Aachen University, Aachen, Germany), Pooja Babu (Jülich Research Centre, Jülich), Joshua Böttcher (Jülich Research Centre, Jülich), Jens Bruchertseifer (University of Trier, Germany), Agnes Korcsak-Gorzo (Jülich Research Centre, Jülich), Charl Linssen (JARA-Institute, Jülich, Germany), Sebastian Spreizer (University of Trier, Germany), Dennis Terhorst (Jülich Research Centre, Jülich and RWTH Aachen University, Aachen, Germany).
+This tutorial is organised by Charl Linssen (Jülich Research Centre, Germany), Agnes Korcsak-Gorzo (Jülich Research Centre, Germany), Jasper Albers (Jülich Research Centre, Germany), Pooja Babu (Jülich Research Centre, Germany), Joshua Böttcher (Jülich Research Centre, Germany), Jessica Mitchell (Jülich Research Centre, Germany), Willem Wybo (Jülich Research Centre, Germany), Jens Bruchertseifer (University of Trier, Germany), Sebastian Spreizer  (University of Trier, Germany) and Dennis Terhorst (Jülich Research Centre, Germany).
 
 For general inquiries, please contact Charl at <a href="mailto:c.linssen@fz-juelich.de">c.linssen@fz-juelich.de</a>.
 
