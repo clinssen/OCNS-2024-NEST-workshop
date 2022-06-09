@@ -250,11 +250,6 @@ You can also run the software on a local computer. We suggest using two Docker i
 
 * [Jupyter Notebook server with NEST and NESTML support](https://github.com/clinssen/OCNS-2022-workshop/tree/master/docker_containers/nest-nestml-jupyterlab-ocns-tutorial)
 
-https://github.com/clinssen/OCNS-2022-workshop/tree/master/nest-desktop-logo.png
-nest_logo.png
-nestml-logo.png
-
-
   Launches a Jupyter Notebook server on localhost at port 7003. The password is: **nest25years**
 
   The image is available via DockerHub. To install:

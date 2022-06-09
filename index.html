@@ -213,17 +213,14 @@ To allow for interactive sessions, tutorials will run as “virtual rooms” (i.
 <p>We will provide login details for virtual machines on Human Brain Project (EBRAINS) infrastructure to registered participants. You will be able to access the required software directly from your browser, without requiring any installation. Access is provided to a NEST Desktop instance, as well as a <a href="https://jupyterhub.readthedocs.io/">JupyterHub</a> environment that includes NEST Simulator and NESTML.</p>
 <p>You can also run the software on a local computer. We suggest using two Docker images that we provide:</p>
 <ul>
-<li><a href="https://github.com/clinssen/OCNS-2022-workshop/tree/master/docker_containers/nest-nestml-jupyterlab-ocns-tutorial">Jupyter Notebook server with NEST and NESTML support</a></li>
-</ul>
-<p>https://github.com/clinssen/OCNS-2022-workshop/tree/master/nest-desktop-logo.png nest_logo.png nestml-logo.png</p>
+<li><p><a href="https://github.com/clinssen/OCNS-2022-workshop/tree/master/docker_containers/nest-nestml-jupyterlab-ocns-tutorial">Jupyter Notebook server with NEST and NESTML support</a></p>
 <p>Launches a Jupyter Notebook server on localhost at port 7003. The password is: <strong>nest25years</strong></p>
 <p>The image is available via DockerHub. To install:</p>
 <pre><code>docker pull clifzju/nest-nestml-jupyterlab-ocns-tutorial</code></pre>
 <p>Then run the image while forwarding the port:</p>
 <pre><code>docker run -i -d -p 7003:7003 -t clifzju/nest-nestml-jupyterlab-ocns-tutorial</code></pre>
 <p>You can then access the server in your browser by navigating to the URL <a href="http://localhost:7003">http://localhost:7003</a>.</p>
-<p>The Docker container can be started in interactive mode (giving you a shell prompt) by omitting the <code>-d</code> parameter.</p>
-<ul>
+<p>The Docker container can be started in interactive mode (giving you a shell prompt) by omitting the <code>-d</code> parameter.</p></li>
 <li><p><a href="https://nest-desktop.readthedocs.io/en/latest/deployer/deploy-docker.html">NEST Desktop</a></p>
 <p>For local installation, we recommend to use the official NEST Desktop Docker image and instructions. Full instructions can be found at: <a href="https://nest-desktop.readthedocs.io/en/latest/deployer/deploy-docker.html">https://nest-desktop.readthedocs.io/en/latest/deployer/deploy-docker.html</a>.</p></li>
 </ul>
