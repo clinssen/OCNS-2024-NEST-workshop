@@ -6,11 +6,12 @@ RUN apt-get update && apt-get install -y build-essential python3-dev python3-pip
 RUN python3 -m pip install --upgrade pip setuptools wheel
 RUN python3 -m pip install uwsgi jupyterlab scikit-learn tqdm --ignore-installed
 RUN python3 -m pip install git+https://github.com/nest/ode-toolbox
-#RUN python3 -m pip install nestml # XXX: we're using the latest master instead of the latest release!
-#RUN python3 -m pip install nestml --pre
-RUN python3 -m pip install git+https://github.com/clinssen/nestml@stdp-dopa-tutorial --upgrade
+#RUN python3 -m pip install nestml # latest release
+#RUN python3 -m pip install nestml --pre  # latest pre-release
+#RUN python3 -m pip install git+https://github.com/clinssen/nestml@stdp-dopa-tutorial --upgrade   # latest from github
 
-RUN cd && git clone https://github.com/clinssen/nestml && cd nestml && git checkout stdp-dopa-tutorial && cd
+# RUN cd && git clone https://github.com/clinssen/nestml && cd nestml && git checkout stdp-dopa-tutorial && cd
+RUN git clone https://github.com/clinssen/nestml && cd nestml && git branch -a && git checkout stdp-dopa-tutorial && python3 setup.py install
 
 # add user 'nest'
 RUN adduser --disabled-login --gecos 'NEST' --home /home/nest nest && \
