@@ -87,6 +87,10 @@ header {
 .select-css:disabled:hover, .select-css[aria-disabled=true] {
     border-color: #aaa;
 }
+
+#start_date_time {
+	font-weight: bold
+}
 </style>
 <script src="moment.js"></script>
 <script src="moment-timezone-with-data.js"></script>
@@ -132,11 +136,12 @@ connect several such neurons to elicit an NMDA-spike driven network state.
 [3] https://nestml.readthedocs.org/
 
 
-<!--
-## Schedule
+## Schedule (online tutorial)
+
+*Please don't forget to [register](https://ocns.github.io/SoftwareWG/pages/software-wg-satellite-tutorials-at-cns-2022.html) ahead of time, in order to receive the meeting link!*
 
 <script>
-var start_time = moment.tz("2021-07-03 15:00", "Europe/Berlin"); // !!! also update start time in the <noscript> table in plain HTML
+var start_time = moment.tz("2022-07-01 12:30", "Europe/Berlin"); // !!! also update start time in the <noscript> table in plain HTML
 
 s = "<label for=\"tz-selector\">Timezone:&nbsp;</label>";
 s += "<select class=\"select-css\" name=\"tz-selector\" id=\"tz-selector\" onChange=\"printTable(document.getElementById('schedule'), document.getElementById('tz-selector').value);\">";
@@ -160,8 +165,14 @@ function printTable(el, in_tz) {
 		item = document.getElementsByClassName('timecell')[i];
 		berlin_time = item.querySelector('noscript').innerHTML.replace(/^\s+|\s+$/g, '');
 		//alert('old time: ' + berlin_time);
-		//alert('attempted new time: ' + start_time.format("YYYY-MM-DD hh:mm:ss").slice(0, -8) + berlin_time + ":00");
-		new_time = moment.tz(start_time.format("YYYY-MM-DD hh:mm:ss").slice(0, -8) + berlin_time + ":00", "Europe/Berlin").tz(in_tz);
+		//alert('attempted new time: ' + start_time.format("YYYY-MM-DD HH:mm:ss").slice(0, -8) + berlin_time + ":00");
+		//alert('new time with date: ' + moment.tz(start_time.format("YYYY-MM-DD HH:mm:ss"), "Europe/Berlin").tz(in_tz));
+		//alert('new time with date: ' + moment.tz(start_time.format("YYYY-MM-DD HH:mm:ss"), "Europe/Berlin").tz(in_tz).format("YYYY-MM-DD HH:mm:ss"));
+		new_time = moment.tz(start_time.format("YYYY-MM-DD HH:mm:ss").slice(0, -8) + berlin_time + ":00", "Europe/Berlin").tz(in_tz);
+		if (i == 0) {
+			//alert('new time: ' + new_time.format("dddd MMMM Do, HH:mm"));
+			document.getElementById('start_date_time').innerHTML = new_time.format("dddd MMMM Do, HH:mm");
+		}
 		//alert('new time: ' + new_time.format());
 		item.innerHTML = "<noscript>" + berlin_time + "</noscript>" + new_time.format('HH:mm');
 	}
@@ -173,6 +184,8 @@ window.addEventListener('load', (event) => {
 
 </script>
 
+The tutorial will start on <span id="start_date_time">Friday, July 1st, 12:30 CEST</span>. <!-- !!! also update start time in the JavaScript below, and in the <noscript> table in plain HTML -->
+
 <div id="schedule" name="schedule">
 <table>
 <tr>
@@ -180,36 +193,16 @@ window.addEventListener('load', (event) => {
 <th>Description</th>
 </tr>
 <tr>
-<td class="timecell"><noscript>15:00</noscript></td>
+<td class="timecell"><noscript>12:30</noscript></td>
 <td>Welcome and introduction to NEST Simulator</td>
 </tr>
 <tr>
-<td class="timecell"><noscript>15:15</noscript></td>
-<td>Introduction and hands-on with NEST Desktop</td>
-</tr>
-<tr>
-<td class="timecell"><noscript>16:00</noscript></td>
-<td>Introduction to synaptic plasticity</td>
-</tr>
-<tr>
-<td class="timecell"><noscript>16:15</noscript></td>
-<td>Lunch break/social</td>
-</tr>
-<tr>
-<td class="timecell"><noscript>16:30</noscript></td>
-<td>Synaptic plasticity models in NESTML</td>
-</tr>
-<tr>
-<td class="timecell"><noscript>17:00</noscript></td>
-<td>Neural network models in NEST Simulator</td>
-</tr>
-<tr>
-<td class="timecell"><noscript>18:00</noscript></td>
+<td class="timecell"><noscript>15:30</noscript></td>
 <td>Closing</td>
 </tr>
 </table>
 </div>
--->
+
 
 ## Links
 
@@ -296,8 +289,7 @@ We acknowledge the use of [Fenix Infrastructure](https://fenix-ri.eu) resources,
 <div id="footer_wrap" class="outer">
 <footer class="inner">
 
-<!-- <p class="copyright" style="color: #cccccc">Slate theme maintained by <a href="https://github.com/pages-themes">pages-themes</a> &bullet; Published with <a href="https://pages.github.com">GitHub Pages</a> &bullet; Timezone magic thanks to <a href="https://momentjs.com/">moment.js</a></p> -->
-<p class="copyright" style="color: #cccccc">Slate theme maintained by <a href="https://github.com/pages-themes">pages-themes</a> &bullet; Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+<p class="copyright" style="color: #cccccc">Slate theme maintained by <a href="https://github.com/pages-themes">pages-themes</a> &bullet; Published with <a href="https://pages.github.com">GitHub Pages</a> &bullet; Timezone magic thanks to <a href="https://momentjs.com/">moment.js</a></p>
 </footer>
 </div>
 
