@@ -194,7 +194,15 @@ The tutorial will start on <span id="start_date_time">Friday, July 1st, 12:30 CE
 </tr>
 <tr>
 <td class="timecell"><noscript>12:30</noscript></td>
-<td>Welcome and introduction to NEST Simulator</td>
+<td>Interactive network design with NEST Desktop<br><span style="font-style:italic">Sebastian Spreizer, Jens Bruchertseifer</span></td>
+</tr>
+<tr>
+<td class="timecell"><noscript>13:30</noscript></td>
+<td>Introduction to NEST Simulator<br><span style="font-style:italic">Dennis Terhorst</span></td>
+</tr>
+<tr>
+<td class="timecell"><noscript>14:30</noscript></td>
+<td>Modeling neurons and synapses with NESTML<br><span style="font-style:italic">Pooja Babu</span></td>
 </tr>
 <tr>
 <td class="timecell"><noscript>15:30</noscript></td>
