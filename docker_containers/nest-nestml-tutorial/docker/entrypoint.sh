@@ -5,7 +5,7 @@ source /opt/nest/bin/nest_vars.sh
 
 
 cd /tmp
-wget https://raw.githubusercontent.com/clinssen/OCNS-2021-workshop/master/docker_containers/nest-nestml-tutorial/jupyter_notebook_config.py
+wget https://raw.githubusercontent.com/clinssen/OCNS-2022-workshop/master/docker_containers/nest-nestml-tutorial/jupyter_notebook_config.py
 mkdir $HOME/.jupyter
 cp jupyter_notebook_config.py $HOME/.jupyter/jupyter_notebook_config.py
 cd
@@ -14,7 +14,7 @@ cd
 
 jupyter-lab &
 
-git clone https://github.com/clinssen/OCNS-2021-workshop
+git clone https://github.com/clinssen/OCNS-2022-workshop
 
 /bin/bash
 
