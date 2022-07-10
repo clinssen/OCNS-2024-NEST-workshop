@@ -221,7 +221,7 @@ The tutorial will start on <span id="start_date_time">Saturday, July 16, 09:30</
 </tr>
 <tr>
 <td class="timecell"><noscript>14:45</noscript></td>
-<td>Morphologically detailed models with NEST<br><span style="font-style:italic">Joshua Böttcher</span></td>
+<td>Morphologically detailed models with NEST<br><span style="font-style:italic">Joshua Böttcher, Willem Wybo</span></td>
 </tr>
 <tr>
 <td class="timecell"><noscript>16:00</noscript></td>
