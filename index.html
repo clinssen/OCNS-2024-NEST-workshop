@@ -105,17 +105,18 @@ An online tutorial as a <a href="https://ocns.github.io/SoftwareWG/pages/softwar
 <p>[1] https://nest-simulator.readthedocs.org/</p>
 <p>[2] https://nest-desktop.readthedocs.org/</p>
 <p>[3] https://nestml.readthedocs.org/</p>
-<h2 id="schedule-online-tutorial">Schedule (online tutorial)</h2>
-<p><em>Please don’t forget to <a href="https://ocns.github.io/SoftwareWG/pages/software-wg-satellite-tutorials-at-cns-2022.html">register</a> ahead of time, in order to receive the meeting link!</em></p>
+<h2 id="schedule-on-site-tutorial">Schedule (on-site tutorial)</h2>
 <script>
-var start_time = moment.tz("2022-07-01 12:30", "Europe/Berlin"); // !!! also update start time in the <noscript> table in plain HTML
+var default_tz = 'Australia/Victoria';
+
+var start_time = moment.tz("2022-07-16 09:30", "Australia/Victoria"); // !!! also update start time in the <noscript> table in plain HTML
 
 s = "<label for=\"tz-selector\">Timezone:&nbsp;</label>";
 s += "<select class=\"select-css\" name=\"tz-selector\" id=\"tz-selector\" onChange=\"printTable(document.getElementById('schedule'), document.getElementById('tz-selector').value);\">";
 
 moment.tz.names().forEach(function (item, index) {
     s += "<option value=\"" + item + "\"";
-    if (item.localeCompare("Europe/Berlin") == 0) {
+    if (item.localeCompare(default_tz) == 0) {
         s += " selected=\"selected\"";
     }
     s += ">" + item + "</option>";
@@ -124,24 +125,23 @@ moment.tz.names().forEach(function (item, index) {
 s += "</select>";
 document.write(s);
 
-document.getElementById('tz-selector').value = "Europe/Berlin";
+document.getElementById('tz-selector').value = default_tz;
 
 function printTable(el, in_tz) {
     //alert(in_tz);
     for (var i = 0; i < document.getElementsByClassName('timecell').length; ++i) {
         item = document.getElementsByClassName('timecell')[i];
-        berlin_time = item.querySelector('noscript').innerHTML.replace(/^\s+|\s+$/g, '');
-        //alert('old time: ' + berlin_time);
-        //alert('attempted new time: ' + start_time.format("YYYY-MM-DD HH:mm:ss").slice(0, -8) + berlin_time + ":00");
-        //alert('new time with date: ' + moment.tz(start_time.format("YYYY-MM-DD HH:mm:ss"), "Europe/Berlin").tz(in_tz));
+        orig_time = item.querySelector('noscript').innerHTML.replace(/^\s+|\s+$/g, '');
+        //alert('orig time: ' + orig_time);
+        //alert('attempted new time: ' + start_time.format("YYYY-MM-DD HH:mm:ss").slice(0, -8) + orig_time + ":00");
         //alert('new time with date: ' + moment.tz(start_time.format("YYYY-MM-DD HH:mm:ss"), "Europe/Berlin").tz(in_tz).format("YYYY-MM-DD HH:mm:ss"));
-        new_time = moment.tz(start_time.format("YYYY-MM-DD HH:mm:ss").slice(0, -8) + berlin_time + ":00", "Europe/Berlin").tz(in_tz);
+        new_time = moment.tz(start_time.format("YYYY-MM-DD HH:mm:ss").slice(0, -8) + orig_time + ":00", default_tz).tz(in_tz);
         if (i == 0) {
             //alert('new time: ' + new_time.format("dddd MMMM Do, HH:mm"));
             document.getElementById('start_date_time').innerHTML = new_time.format("dddd MMMM Do, HH:mm");
         }
         //alert('new time: ' + new_time.format());
-        item.innerHTML = "<noscript>" + berlin_time + "</noscript>" + new_time.format('HH:mm');
+        item.innerHTML = "<noscript>" + orig_time + "</noscript>" + new_time.format('HH:mm');
     }
 }
 
@@ -150,12 +150,12 @@ window.addEventListener('load', (event) => {
 });
 
 </script>
-<p>The tutorial will start on <span id="start_date_time">Friday, July 1st, 12:30 CEST</span>. <!-- !!! also update start time in the JavaScript below, and in the <noscript> table in plain HTML --></p>
+<p>The tutorial will start on <span id="start_date_time">Saturday, July 16, 09:30</span>. <!-- !!! also update start time in the JavaScript below, and in the <noscript> table in plain HTML --></p>
 <div id="schedule" name="schedule">
 <table>
 <tr>
 <th>
-Time <noscript>(Berlin<br>timezone)</noscript>
+Time <noscript>(Melbourne<br>timezone)</noscript>
 </th>
 <th>
 Description
@@ -164,11 +164,51 @@ Description
 <tr>
 <td class="timecell">
 <noscript>
+09:00
+</noscript>
+</td>
+<td>
+Overview and introduction to NEST Simulator<br><span style="font-style:italic">Charl Linssen</span>
+</td>
+</tr>
+<tr>
+<td class="timecell">
+<noscript>
+09:30
+</noscript>
+</td>
+<td>
+Data-driven spatial plastic networks<br><span style="font-style:italic">Jasper Albers, Agnes Korcsak-Gorzo</span>
+</td>
+</tr>
+<tr>
+<td class="timecell">
+<noscript>
+11:00
+</noscript>
+</td>
+<td>
+Coffee break
+</td>
+</tr>
+<tr>
+<td class="timecell">
+<noscript>
+11:15
+</noscript>
+</td>
+<td>
+Modeling dopamine-modulated STDP synapses with NESTML<br><span style="font-style:italic">Pooja Babu, Charl Linssen</span>
+</td>
+</tr>
+<tr>
+<td class="timecell">
+<noscript>
 12:30
 </noscript>
 </td>
 <td>
-Interactive network design with NEST Desktop<br><span style="font-style:italic">Sebastian Spreizer, Jens Bruchertseifer</span>
+Lunch break
 </td>
 </tr>
 <tr>
@@ -178,7 +218,7 @@ Interactive network design with NEST Desktop<br><span style="font-style:italic">
 </noscript>
 </td>
 <td>
-Introduction to NEST Simulator<br><span style="font-style:italic">Dennis Terhorst</span>
+Interactive network design with NEST Desktop<br><span style="font-style:italic">Jens Bruchertseifer, Sebastian Spreizer</span>
 </td>
 </tr>
 <tr>
@@ -188,13 +228,23 @@ Introduction to NEST Simulator<br><span style="font-style:italic">Dennis Terhors
 </noscript>
 </td>
 <td>
-Modeling neurons and synapses with NESTML<br><span style="font-style:italic">Pooja Babu</span>
+Coffee break
 </td>
 </tr>
 <tr>
 <td class="timecell">
 <noscript>
-15:30
+14:45
+</noscript>
+</td>
+<td>
+Morphologically detailed models with NEST<br><span style="font-style:italic">Joshua Böttcher</span>
+</td>
+</tr>
+<tr>
+<td class="timecell">
+<noscript>
+16:00
 </noscript>
 </td>
 <td>
