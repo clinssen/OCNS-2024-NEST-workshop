@@ -129,11 +129,11 @@ connect several such neurons to elicit an NMDA-spike driven network state.
 
 ### Citations
 
-[1] https://nest-simulator.readthedocs.org/
+[1] [https://nest-simulator.readthedocs.org/](https://nest-simulator.readthedocs.org/)
 
-[2] https://nest-desktop.readthedocs.org/
+[2] [https://nest-desktop.readthedocs.org/](https://nest-desktop.readthedocs.org/)
 
-[3] https://nestml.readthedocs.org/
+[3] [https://nestml.readthedocs.org/](https://nestml.readthedocs.org/)
 
 
 ## Schedule (on-site tutorial)
