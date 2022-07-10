@@ -6,10 +6,10 @@ runcmd:
 - yum install -y python3-wheel docker-ce docker-ce-cli containerd.io epel-release
 - yum install -y docker-compose
 - mkdir /etc/docker
-- curl https://raw.githubusercontent.com/clinssen/OCNS-2021-workshop/master/docker_containers/nest-nestml-tutorial/etc_docker_daemon.json -o /etc/docker/daemon.json
+- curl https://raw.githubusercontent.com/clinssen/OCNS-2022-workshop/master/docker_containers/nest-nestml-tutorial/etc_docker_daemon.json -o /etc/docker/daemon.json
 - systemctl start docker
 - usermod -aG docker centos
 - su -c "curl https://raw.githubusercontent.com/clinssen/OCNS-2022-workshop/master/docker_containers/docker-compose.yml -o /home/centos/docker-compose.yml" - centos
 - su -c "docker pull clifzju/nest-nestml-jupyterlab-ocns-tutorial" - centos
-- su -c "cd && docker-compose up" - centos
 - su -c "docker run -i -d -p 7003:7003 -t clifzju/nest-nestml-jupyterlab-ocns-tutorial" - centos
+- su -c "cd && docker-compose up -d" - centos
