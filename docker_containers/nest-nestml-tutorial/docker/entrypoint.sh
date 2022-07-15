@@ -18,7 +18,7 @@ jupyter-lab &
 git clone https://github.com/clinssen/OCNS-2022-workshop
 cd OCNS-2022-workshop/materials/nestml
 git clone https://github.com/nest/nestml
-cd ../..
+cd ../../..
 
 /bin/bash
 
