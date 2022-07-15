@@ -197,23 +197,23 @@ The tutorial will start on <span id="start_date_time">Saturday, July 16, 09:30</
 </tr>
 <tr>
 <td class="timecell"><noscript>09:30</noscript></td>
-<td>Data-driven spatial plastic networks<br><span style="font-style:italic">Jasper Albers, Agnes Korcsak-Gorzo</span></td>
+<td>Interactive network design with NEST Desktop<br><span style="font-style:italic">Jens Bruchertseifer, Sebastian Spreizer</span></td>
 </tr>
 <tr>
-<td class="timecell"><noscript>11:00</noscript></td>
+<td class="timecell"><noscript>10:30</noscript></td>
 <td>Coffee break</td>
 </tr>
 <tr>
-<td class="timecell"><noscript>11:15</noscript></td>
-<td>Modeling dopamine-modulated STDP synapses with NESTML<br><span style="font-style:italic">Pooja Babu, Charl Linssen</span></td>
+<td class="timecell"><noscript>10:45</noscript></td>
+<td>Data-driven spatial plastic networks<br><span style="font-style:italic">Jasper Albers, Agnes Korcsak-Gorzo</span></td>
 </tr>
 <tr>
-<td class="timecell"><noscript>12:30</noscript></td>
+<td class="timecell"><noscript>12:15</noscript></td>
 <td>Lunch break</td>
 </tr>
 <tr>
-<td class="timecell"><noscript>13:30</noscript></td>
-<td>Interactive network design with NEST Desktop<br><span style="font-style:italic">Jens Bruchertseifer, Sebastian Spreizer</span></td>
+<td class="timecell"><noscript>13:00</noscript></td>
+<td>Modeling dopamine-modulated STDP synapses with NESTML<br><span style="font-style:italic">Pooja Babu, Charl Linssen</span></td>
 </tr>
 <tr>
 <td class="timecell"><noscript>14:30</noscript></td>
