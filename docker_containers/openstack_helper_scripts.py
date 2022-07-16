@@ -70,7 +70,7 @@ ips = [_[len(prefix):] for _ in re.findall(prefix + "[0-9\.]+", str(s))]
 
 print("\n".join(ips))
 
-print("\n".join(["http://" + $ openstack floating ip listip + ":7001" for ip in ips]))
+print("\n".join(["http://" + ip + ":7001" for ip in ips]))
 print("\n".join(["http://" + ip + ":7003" for ip in ips]))
 
 
