@@ -15,6 +15,7 @@ cd
 
 jupyter-lab &
 
+mv -f OCNS-2022-workshop /tmp/
 git clone https://github.com/clinssen/OCNS-2022-workshop
 cd OCNS-2022-workshop/materials/nestml
 git clone https://github.com/nest/nestml
