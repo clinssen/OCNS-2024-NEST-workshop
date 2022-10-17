@@ -59,7 +59,10 @@ for i in range(len(ids)):
 
 # check that everything is up
 for ip in ips:
-    print(subprocess.check_output(("curl -s -o /dev/null -D - " + ip + ":7001").split(" ")))
+    try:
+        print(subprocess.check_output(("curl -s -o /dev/null -D - " + ip + ":7001").split(" ")))
+    except:
+        print("Issue with IP: " + str(ip))
 
 # generate the links for in the participant VM allocation spreadsheet
 prefix = "jusuf-cloud-network="
