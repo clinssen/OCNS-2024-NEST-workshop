@@ -1,11 +1,11 @@
 ---
-title: "From single-cell modeling to large-scale network dynamics with NEST Simulator"
+title: "License to Spike — A NEST Desktop and NESTML Workshop"
 ---
 
 <!-- HEADER -->
 <div id="header_wrap" class="outer">
 <header class="inner">
-<h1 id="project_title"><span style="font-size:90% !important">From single-cell modeling to large-scale network dynamics with NEST Simulator</span></h1>
+<h1 id="project_title"><span style="font-size:90% !important">License to Spike — A NEST Desktop and NESTML Workshop</span></h1>
 <!-- <h2 id="project_tagline">No tagline here</h2> -->
 </header>
 </div>
@@ -95,9 +95,7 @@ header {
 <script src="moment.js"></script>
 <script src="moment-timezone-with-data.js"></script>
 
-<p style="margin-top: -1em; text-align: center; font-style: italic !important">An on-site tutorial at the [31st Annual Computational Neuroscience Meeting](https://www.cnsorg.org/cns-2022), July 16-20, 2022</p>
-<p style="text-align: center; margin: -1em">—</p>
-<p style="margin-top: 1em; text-align: center; font-style: italic !important">An online tutorial as a [CNS satellite event](https://ocns.github.io/SoftwareWG/pages/software-wg-satellite-tutorials-at-cns-2022.html), July 1st, 2022</p>
+<p style="margin-top: -1em; text-align: center; font-style: italic !important">An on-site tutorial at the [Human Brain Project Summit 2023](https://summit2023.humanbrainproject.eu/), March 27-31, 2023</p>
 
 ## Description
 
@@ -139,9 +137,9 @@ connect several such neurons to elicit an NMDA-spike driven network state.
 ## Schedule (on-site tutorial)
 
 <script>
-var default_tz = 'Australia/Victoria';
+var default_tz = 'Europe/Paris';
 
-var start_time = moment.tz("2022-07-16 09:30", "Australia/Victoria"); // !!! also update start time in the <noscript> table in plain HTML
+var start_time = moment.tz("2023-03-27 09:00", "Europe/Paris"); // !!! also update start time in the <noscript> table in plain HTML
 
 s = "<label for=\"tz-selector\">Timezone:&nbsp;</label>";
 s += "<select class=\"select-css\" name=\"tz-selector\" id=\"tz-selector\" onChange=\"printTable(document.getElementById('schedule'), document.getElementById('tz-selector').value);\">";
@@ -183,48 +181,40 @@ window.addEventListener('load', (event) => {
 
 </script>
 
-The tutorial will start on <span id="start_date_time">Saturday, July 16, 09:30</span>. <!-- !!! also update start time in the JavaScript below, and in the <noscript> table in plain HTML -->
+The tutorial will start on <span id="start_date_time">Monday, March 27, 09:00</span>. <!-- !!! also update start time in the JavaScript below, and in the <noscript> table in plain HTML -->
 
 <div id="schedule" name="schedule">
 <table>
 <tr>
-<th>Time <noscript>(Melbourne<br>timezone)</noscript></th>
+<th>Time <noscript>(Marseille<br>timezone)</noscript></th>
 <th>Description</th>
 </tr>
 <tr>
 <td class="timecell"><noscript>09:00</noscript></td>
-<td>Overview and introduction to NEST Simulator<br><span style="font-style:italic">Charl Linssen</span></td>
+<td>Overview and introduction to NEST Simulator<br><span style="font-style:italic">Jens Bruchertseifer, Sebastian Spreizer</span></td>
 </tr>
 <tr>
 <td class="timecell"><noscript>09:30</noscript></td>
 <td>Interactive network design with NEST Desktop<br><span style="font-style:italic">Jens Bruchertseifer, Sebastian Spreizer</span></td>
 </tr>
 <tr>
-<td class="timecell"><noscript>10:30</noscript></td>
-<td>Coffee break</td>
+<td class="timecell"><noscript>09:45</noscript></td>
+<td>Hands-on with NEST Desktop<br><span style="font-style:italic">Jens Bruchertseifer, Sebastian Spreizer</span></td>
 </tr>
 <tr>
-<td class="timecell"><noscript>10:45</noscript></td>
-<td>Data-driven spatial plastic networks<br><span style="font-style:italic">Jasper Albers, Agnes Korcsak-Gorzo</span></td>
+<td class="timecell"><noscript>11:00</noscript></td>
+<td>Break</td>
+</tr>
+<tr>
+<td class="timecell"><noscript>11:15</noscript></td>
+<td>Modeling dendritic spikes with NESTML<br><span style="font-style:italic">Pooja Babu, Charl Linssen</span></td>
 </tr>
 <tr>
 <td class="timecell"><noscript>12:15</noscript></td>
-<td>Lunch break</td>
-</tr>
-<tr>
-<td class="timecell"><noscript>13:00</noscript></td>
 <td>Modeling dopamine-modulated STDP synapses with NESTML<br><span style="font-style:italic">Pooja Babu, Charl Linssen</span></td>
 </tr>
 <tr>
-<td class="timecell"><noscript>14:30</noscript></td>
-<td>Coffee break</td>
-</tr>
-<tr>
-<td class="timecell"><noscript>14:45</noscript></td>
-<td>Morphologically detailed models with NEST<br><span style="font-style:italic">Joshua Böttcher, Willem Wybo</span></td>
-</tr>
-<tr>
-<td class="timecell"><noscript>16:00</noscript></td>
+<td class="timecell"><noscript>13:15</noscript></td>
 <td>Closing</td>
 </tr>
 </table>
@@ -233,26 +223,24 @@ The tutorial will start on <span id="start_date_time">Saturday, July 16, 09:30</
 
 ## Links
 
-<div style="text-align:center">[<img src="https://raw.githubusercontent.com/clinssen/OCNS-2022-workshop/master/nest_logo.png" border="0">](https://nest-simulator.readthedocs.io/)<br>[<span style="font-size:120%; font-weight: 120%">NEST Simulator</span>](https://nest-simulator.readthedocs.io/)</div>
+<div style="text-align:center">[<img src="https://raw.githubusercontent.com/clinssen/HBP-summit-2023-workshop/master/nest_logo.png" border="0">](https://nest-simulator.readthedocs.io/)<br>[<span style="font-size:120%; font-weight: 120%">NEST Simulator</span>](https://nest-simulator.readthedocs.io/)</div>
 
 <p>NEST Simulator is a spiking neuron simulator which specialises in point neurons and neurons with few comparments. It can simulate synaptic plasticity, structural plasticity, gap junctions and countless other features on machines ranging from home PCs to high-performance computing systems.</p>
 
-<div style="text-align:center">[<img src="https://raw.githubusercontent.com/clinssen/OCNS-2022-workshop/master/nest-desktop-logo.png" border="0" width="240" height="222">](https://nest-desktop.readthedocs.io/)<br>[<span style="font-size:120%; font-weight: 120%">NEST Desktop</span>](https://nest-desktop.readthedocs.io/)</div>
+<div style="text-align:center">[<img src="https://raw.githubusercontent.com/clinssen/HBP-summit-2023-workshop/master/nest-desktop-logo.png" border="0" width="240" height="222">](https://nest-desktop.readthedocs.io/)<br>[<span style="font-size:120%; font-weight: 120%">NEST Desktop</span>](https://nest-desktop.readthedocs.io/)</div>
 
 <p>NEST Desktop is a web-based GUI application for NEST Simulator. It enables the rapid construction, parametrization, and instrumentation of neuronal network models.</p>
 
-<div style="text-align:center">[<img src="https://raw.githubusercontent.com/clinssen/OCNS-2022-workshop/master/nestml-logo.png" border="0" width="240" height="73">](https://nestml.readthedocs.io/)<br>[<span style="font-size:120%; font-weight: 120%">NESTML</span>](https://nestml.readthedocs.io/)</div>
+<div style="text-align:center">[<img src="https://raw.githubusercontent.com/clinssen/HBP-summit-2023-workshop/master/nestml-logo.png" border="0" width="240" height="73">](https://nestml.readthedocs.io/)<br>[<span style="font-size:120%; font-weight: 120%">NESTML</span>](https://nestml.readthedocs.io/)</div>
 
 <p>NESTML is a domain-specific modeling language and code-generation toolchain. It supports the specification of neuron models in an intuitive and concise syntax. Optimised code generation for the target simulation platform couples a highly accessible language with good simulation performance.</p>
 
 
 ## Registration
 
-Please don't forget to register for the on-site conference at [https://www.cnsorg.org/cns-2022](https://www.cnsorg.org/cns-2022).
+Please don't forget to [register](https://flagship.kip.uni-heidelberg.de/jss/HBPm?mI=252) for the on-site workshop. Registration is free but required.
 
-Free online satellite tutorials are given as part of CNS*2022 between June 27th and July 1st. Registration is free but required at [https://ocns.github.io/SoftwareWG/pages/software-wg-satellite-tutorials-at-cns-2022.html](https://ocns.github.io/SoftwareWG/pages/software-wg-satellite-tutorials-at-cns-2022.html)
-
-Tutorials are not recorded and are not livestreamed events on YouTube.
+Tutorials are not recorded and are not livestreamed events on YouTube. Please note that this is an on-site event only.
 
 <!-- ## Connection details
 
@@ -268,7 +256,7 @@ We will provide login details for virtual machines on Human Brain Project (EBRAI
 
 You can also run the software on a local computer. We suggest using two Docker images that we provide:
 
-* [JupyterLab server with NEST and NESTML support](https://github.com/clinssen/OCNS-2022-workshop/tree/master/docker_containers/nest-nestml-tutorial)
+* [JupyterLab server with NEST and NESTML support](https://github.com/clinssen/HBP-summit-2023-workshop/tree/master/docker_containers/nest-nestml-tutorial)
 
   Launches a Jupyter Notebook server on localhost at port 7003. The password is: **nest25years**
 
@@ -300,7 +288,7 @@ If you participated in (any part) of this tutorial, we value your feedback! Plea
 
 ## Organisation
 
-This tutorial is organised by Charl Linssen (Jülich Research Centre, Germany), Agnes Korcsak-Gorzo (Jülich Research Centre, Germany), Jasper Albers (Jülich Research Centre, Germany), Pooja Babu (Jülich Research Centre, Germany), Joshua Böttcher (Jülich Research Centre, Germany), Jessica Mitchell (Jülich Research Centre, Germany), Willem Wybo (Jülich Research Centre, Germany), Jens Bruchertseifer (University of Trier, Germany), Sebastian Spreizer  (University of Trier, Germany) and Dennis Terhorst (Jülich Research Centre, Germany).
+This tutorial is organised by Charl Linssen (Jülich Research Centre, Germany), Pooja Babu (Jülich Research Centre, Germany), Jens Bruchertseifer (University of Trier, Germany) and Sebastian Spreizer (University of Trier, Germany).
 
 For general inquiries, please contact Charl at <a href="mailto:c.linssen@fz-juelich.de">c.linssen@fz-juelich.de</a>.
 
