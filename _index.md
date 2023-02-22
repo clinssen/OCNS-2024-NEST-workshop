@@ -1,11 +1,11 @@
 ---
-title: "License to Spike — A NEST Desktop and NESTML Workshop"
+title: "License to Spike: A NEST Desktop and NESTML Workshop"
 ---
 
 <!-- HEADER -->
 <div id="header_wrap" class="outer">
 <header class="inner">
-<h1 id="project_title"><span style="font-size:90% !important">License to Spike — A NEST Desktop and NESTML Workshop</span></h1>
+<h1 id="project_title"><span style="font-size:90% !important">License to Spike:<br>A NEST Desktop and NESTML Workshop</span></h1>
 <!-- <h2 id="project_tagline">No tagline here</h2> -->
 </header>
 </div>
@@ -111,18 +111,15 @@ the exploration of essential concepts in computational neuroscience without the 
 a programming language. This advances both the quality and speed of teaching in
 computational neuroscience. To get acquainted with the GUI, we will create and analyze a
 balanced two-population network.
-The model is then exported to a Jupyter notebook and endowed with a data-driven spatial
-connectivity profile of the cortex, enabling us to study the propagation of activity. Then, we
-make the synapses in the network plastic and let the network learn a reinforcement learning
-task, whereby the learning rule goes beyond pre-synaptic and post-synaptic spikes by adding
-a dopamine signal as a modulatory third factor. NESTML [3] makes it easy to express this and
-other advanced synaptic plasticity rules and neuron models, and automatically translates
-them into fast simulation code.
-More morphologically detailed models, with a large number of compartments and custom ion
-channels and receptor currents, can also be defined using NESTML. We first implement a
-simple dendritic layout and use it to perform a sequence discrimination task. Next, we
-implement a compartmental layout representing semi-independent subunits and recurrently
-connect several such neurons to elicit an NMDA-spike driven network state.
+
+In the second half of the session, we will create a new, custom neuron model that extends the
+capabilities of NEST Simulator by introducing new mechanisms, such as an active spiking dendritic
+compartment. NESTML [3] makes it quick and easy it is to implement and simulate model variants. 
+
+A neuronal plasticity rule is then introduced, which allows a network to be trained by means 
+of reinforcement learning. This is accomplished by combinating a typical spike-timing dependent
+plasticity learning rule with a global neuromodulatory dopamine signal. We will use the new
+learning rule to train a stimulus preference in the balanced network.
 
 
 ### Citations
