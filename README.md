@@ -10,4 +10,4 @@ Previous editions:
 
 Please visit the website at:
 
-https://clinssen.github.io/HBP-summit-2023-workshop/
+https://clinssen.github.io/OCNS-2023-NEST-workshop/
