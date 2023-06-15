@@ -48,8 +48,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     wget && \
     # update-alternatives --remove-all python && \
     update-alternatives --install /usr/bin/python python /usr/bin/python3 10 && \
-    update-alternatives --install /usr/bin/pip pip /usr/bin/pip3 10 && \
-    python3 -m pip install --upgrade pip setuptools wheel mock
+    update-alternatives --install /usr/bin/pip pip /usr/bin/pip3 10
+
+RUN python3 -m pip install --upgrade pip setuptools wheel mock pandas
 
 
 ARG NEST_VERSION=master
@@ -73,9 +74,8 @@ RUN mkdir nest-build && cd nest-build && \
           -Dwith-libneurosim=OFF \
           -Dwith-music=/opt/music-install \
           ${SRC_PATH}/nest-simulator-${NEST_VERSION} && \
-    make -j 8 && \
-    make html && \
-    make install
+make -j && \
+make install
 
 # add user 'nest'
 RUN adduser --disabled-login --gecos 'NEST' --home /home/nest nest && \
@@ -96,7 +96,8 @@ RUN python3 -m pip install seaborn
 #RUN python3 -m pip install git+https://github.com/clinssen/nestml@stdp-dopa-tutorial --upgrade   # latest from github
 # RUN cd && git clone https://github.com/clinssen/nestml && cd nestml && git checkout stdp-dopa-tutorial && cd
 #RUN git clone https://github.com/clinssen/nestml && cd nestml && git branch -a && git checkout stdp-dopa-tutorial-upstream && python3 setup.py install
-RUN python3 -m pip install git+https://github.com/clinssen/nestml@stdp-dopa-tutorial-upstream --upgrade
+#RUN python3 -m pip install git+https://github.com/clinssen/nestml@stdp-dopa-tutorial-upstream --upgrade
+RUN python3 -m pip install git+https://github.com/nest/nestml --upgrade
 
 # copy entrypoint to nest home folder
 COPY ./docker/entrypoint.sh /home/nest
