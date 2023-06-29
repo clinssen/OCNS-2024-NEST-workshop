@@ -216,7 +216,7 @@ The tutorial will start on <span id="start_date_time">Saturday, July 15th, 09:00
 </tr>
 <tr>
 <td class="timecell"><noscript>10:40</noscript></td>
-<td>Emergence of V1 orientation tuning<br><span style="font-style:italic">Aadhar Sharma</span></td>
+<td>Emergence of V1 orientation tuning<br><span style="font-style:italic">Wenqing Wei</span></td>
 </tr>
 <tr>
 <td class="timecell"><noscript>12:10</noscript></td>
@@ -224,7 +224,7 @@ The tutorial will start on <span id="start_date_time">Saturday, July 15th, 09:00
 </tr>
 <tr>
 <td class="timecell"><noscript>14:00</noscript></td>
-<td>Homeostatic structural plasticity<br><span style="font-style:italic">Wenqing Wei</span></td>
+<td>Homeostatic structural plasticity<br><span style="font-style:italic">Aadhar Sharma</span></td>
 </tr>
 <tr>
 <td class="timecell"><noscript>15:30</noscript></td>
