@@ -93,7 +93,8 @@ header {
 }
 
 .side_img {
-	margin: 10px;
+	width: 14em;
+	margin: 1em;
 	border: 1px solid grey;
 	box-shadow: 3px 3px 3px #ccc;
 	clear: both;
@@ -106,27 +107,27 @@ header {
 
 ## Description
 
-<img class="side_img" src="img/nest_desktop_screenshot.png" align="right" width="200">NEST is an established, open-source simulator for spiking neuronal networks, which can
+<img class="side_img" src="img/nest_desktop_screenshot.png" align="right">NEST is an established, open-source simulator for spiking neuronal networks, which can
 capture a high degree of detail of biological network structures while retaining high
 performance and scalability from laptops to HPC [1]. This tutorial offers a hands-on
 experience in building and simulating neuron, synapse, and network models. It introduces
 several tools and front-ends to implement modeling ideas most effectively. Participants do
 not have to install software as all tools are accessible via the cloud.
 
-<img class="side_img" src="img/orientation_selectivity.png" align="right" width="200">First, we look at NEST Desktop [2], a web-based graphical user interface (GUI), which allows
+<img class="side_img" src="img/orientation_selectivity.png" align="right">First, we look at NEST Desktop [2], a web-based graphical user interface (GUI), which allows
 the exploration of essential concepts in computational neuroscience without the need to
 learn a programming language. This advances both the quality and speed of teaching in
 computational neuroscience. To get acquainted with the GUI, we will create and analyze a
 balanced two-population network.
 
-<img class="side_img" src="img/structural_plasticity.png" align="right" width="200">The tutorial will then turn to Jupyter (Python) notebooks where we will start by creating a
+<img class="side_img" src="img/structural_plasticity.png" align="right">The tutorial will then turn to Jupyter (Python) notebooks where we will start by creating a
 spiking network based on the rodent visual system. This will enable us to study the emergence
 of orientation tuning of V1 neurons in the feedforward thalamocortical pathway, through a
 nonlinear input-output transformation. Next, we will observe how homeostatic structural
 plasticity regulates the activity of individual neurons in a network and leads to activity-
 dependent self-organization [3].
 
-<img class="side_img" src="img/nestml_figure.png" align="right" width="200">To demonstrate the ease and flexibility of using NESTML to create custom neuron and
+<img class="side_img" src="img/nestml_figure.png" align="right">To demonstrate the ease and flexibility of using NESTML to create custom neuron and
 synapse models for NEST Simulator, a functional plasticity rule will then be introduced into
 the balanced E/I network to implement a biologically realistic version of reinforcement
 learning. This will be done by formulating the learning model in the NESTML language syntax,
