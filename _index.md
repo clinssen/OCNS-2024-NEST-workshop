@@ -91,6 +91,13 @@ header {
 #start_date_time {
 	font-weight: bold
 }
+
+.side_img {
+	margin: 10px;
+	border: 1px solid grey;
+	box-shadow: 3px 3px 3px #ccc;
+	clear: both;
+}
 </style>
 <script src="moment.js"></script>
 <script src="moment-timezone-with-data.js"></script>
@@ -99,27 +106,27 @@ header {
 
 ## Description
 
-NEST is an established, open-source simulator for spiking neuronal networks, which can
+<img class="side_img" src="img/nest_desktop_screenshot.png" align="right" width="200">NEST is an established, open-source simulator for spiking neuronal networks, which can
 capture a high degree of detail of biological network structures while retaining high
 performance and scalability from laptops to HPC [1]. This tutorial offers a hands-on
 experience in building and simulating neuron, synapse, and network models. It introduces
 several tools and front-ends to implement modeling ideas most effectively. Participants do
 not have to install software as all tools are accessible via the cloud.
 
-First, we look at NEST Desktop [2], a web-based graphical user interface (GUI), which allows
+<img class="side_img" src="img/orientation_selectivity.png" align="right" width="200">First, we look at NEST Desktop [2], a web-based graphical user interface (GUI), which allows
 the exploration of essential concepts in computational neuroscience without the need to
 learn a programming language. This advances both the quality and speed of teaching in
 computational neuroscience. To get acquainted with the GUI, we will create and analyze a
 balanced two-population network.
 
-The tutorial will then turn to Jupyter (Python) notebooks where we will start by creating a
+<img class="side_img" src="img/structural_plasticity.png" align="right" width="200">The tutorial will then turn to Jupyter (Python) notebooks where we will start by creating a
 spiking network based on the rodent visual system. This will enable us to study the emergence
 of orientation tuning of V1 neurons in the feedforward thalamocortical pathway, through a
 nonlinear input-output transformation. Next, we will observe how homeostatic structural
 plasticity regulates the activity of individual neurons in a network and leads to activity-
 dependent self-organization [3].
 
-To demonstrate the ease and flexibility of using NESTML to create custom neuron and
+<img class="side_img" src="img/nestml_figure.png" align="right" width="200">To demonstrate the ease and flexibility of using NESTML to create custom neuron and
 synapse models for NEST Simulator, a functional plasticity rule will then be introduced into
 the balanced E/I network to implement a biologically realistic version of reinforcement
 learning. This will be done by formulating the learning model in the NESTML language syntax,
@@ -137,14 +144,14 @@ concentration, using the scalable volume transmitter concept from NEST [5].
 [3] Diaz-Pier S, Naveau M, Butz-Ostendorf M, Morrison A (2016). Automatic
 Generation of Connectivity for Large-Scale Neuronal Network Models through
 Structural Plasticity. Frontiers in Neuroanatomy, Vol. 10.
-https://doi.org/10.3389/fnana.2016.00057
+<a href="https://doi.org/10.3389/fnana.2016.00057">https://doi.org/10.3389/fnana.2016.00057</a>
 
 [4] [https://nestml.readthedocs.org/](https://nestml.readthedocs.org/)
 
 [5] Potjans W, Morrison A, Diesmann M (2010). Enabling functional neural circuit
 simulations with distributed computing of neuromodulated plasticity.
 Frontiers in Computational Neuroscience, 4:141. DOI:
-https://doi.org/10.3389/fncom.2010.00141
+<a href="https://doi.org/10.3389/fncom.2010.00141">https://doi.org/10.3389/fncom.2010.00141</a>
 
 
 ## Schedule (on-site tutorial)
@@ -244,15 +251,15 @@ The tutorial will start on <span id="start_date_time">Saturday, July 15th, 09:00
 
 ## Links
 
-<div style="text-align:center">[<img src="https://raw.githubusercontent.com/clinssen/OCNS-2023-NEST-workshop/master/nest_logo.png" border="0">](https://nest-simulator.readthedocs.io/)<br>[<span style="font-size:120%; font-weight: 120%">NEST Simulator</span>](https://nest-simulator.readthedocs.io/)</div>
+<div style="text-align:center">[<img src="https://raw.githubusercontent.com/clinssen/OCNS-2023-NEST-workshop/master/img/nest_logo.png" border="0">](https://nest-simulator.readthedocs.io/)<br>[<span style="font-size:120%; font-weight: 120%">NEST Simulator</span>](https://nest-simulator.readthedocs.io/)</div>
 
 <p>NEST Simulator is a spiking neuron simulator which specialises in point neurons and neurons with few comparments. It can simulate synaptic plasticity, structural plasticity, gap junctions and countless other features on machines ranging from home PCs to high-performance computing systems.</p>
 
-<div style="text-align:center">[<img src="https://raw.githubusercontent.com/clinssen/OCNS-2023-NEST-workshop/master/nest-desktop-logo.png" border="0" width="240" height="222">](https://nest-desktop.readthedocs.io/)<br>[<span style="font-size:120%; font-weight: 120%">NEST Desktop</span>](https://nest-desktop.readthedocs.io/)</div>
+<div style="text-align:center">[<img src="https://raw.githubusercontent.com/clinssen/OCNS-2023-NEST-workshop/master/img/nest-desktop-logo.png" border="0" width="240" height="222">](https://nest-desktop.readthedocs.io/)<br>[<span style="font-size:120%; font-weight: 120%">NEST Desktop</span>](https://nest-desktop.readthedocs.io/)</div>
 
 <p>NEST Desktop is a web-based GUI application for NEST Simulator. It enables the rapid construction, parametrization, and instrumentation of neuronal network models.</p>
 
-<div style="text-align:center">[<img src="https://raw.githubusercontent.com/clinssen/OCNS-2023-NEST-workshop/master/nestml-logo.png" border="0" width="240" height="73">](https://nestml.readthedocs.io/)<br>[<span style="font-size:120%; font-weight: 120%">NESTML</span>](https://nestml.readthedocs.io/)</div>
+<div style="text-align:center">[<img src="https://raw.githubusercontent.com/clinssen/OCNS-2023-NEST-workshop/master/img/nestml-logo.png" border="0" width="240" height="73">](https://nestml.readthedocs.io/)<br>[<span style="font-size:120%; font-weight: 120%">NESTML</span>](https://nestml.readthedocs.io/)</div>
 
 <p>NESTML is a domain-specific modeling language and code-generation toolchain. It supports the specification of neuron models in an intuitive and concise syntax. Optimised code generation for the target simulation platform couples a highly accessible language with good simulation performance.</p>
 

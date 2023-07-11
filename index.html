@@ -2,7 +2,8 @@
 <div id="header_wrap" class="outer">
 <header class="inner">
 <h1 id="project_title">
-<span style="font-size:90% !important">From single-cell modeling to large-scale network dynamics with NEST Simulator</span>
+<span style="font-size:90% !important">From single-cell modeling to
+large-scale network dynamics with NEST Simulator</span>
 </h1>
 <!-- <h2 id="project_tagline">No tagline here</h2> -->
 </header>
@@ -86,23 +87,72 @@ header {
 #start_date_time {
     font-weight: bold
 }
+
+.side_img {
+    margin: 10px;
+    border: 1px solid grey;
+    box-shadow: 3px 3px 3px #ccc;
+    clear: both;
+}
 </style>
 <script src="moment.js"></script>
 <script src="moment-timezone-with-data.js"></script>
 <p style="margin-top: -1em; text-align: center; font-style: italic !important">
-An on-site tutorial at the <a href="https://www.cnsorg.org/cns-2023">32nd Annual Computational Neuroscience Meeting (CNS*2023)</a><br>July 15-19th, 2023
+An on-site tutorial at the <a
+href="https://www.cnsorg.org/cns-2023">32nd Annual Computational
+Neuroscience Meeting (CNS*2023)</a><br>July 15-19th, 2023
 </p>
 <h2 id="description">Description</h2>
-<p>NEST is an established, open-source simulator for spiking neuronal networks, which can capture a high degree of detail of biological network structures while retaining high performance and scalability from laptops to HPC [1]. This tutorial offers a hands-on experience in building and simulating neuron, synapse, and network models. It introduces several tools and front-ends to implement modeling ideas most effectively. Participants do not have to install software as all tools are accessible via the cloud.</p>
-<p>First, we look at NEST Desktop [2], a web-based graphical user interface (GUI), which allows the exploration of essential concepts in computational neuroscience without the need to learn a programming language. This advances both the quality and speed of teaching in computational neuroscience. To get acquainted with the GUI, we will create and analyze a balanced two-population network.</p>
-<p>The tutorial will then turn to Jupyter (Python) notebooks where we will start by creating a spiking network based on the rodent visual system. This will enable us to study the emergence of orientation tuning of V1 neurons in the feedforward thalamocortical pathway, through a nonlinear input-output transformation. Next, we will observe how homeostatic structural plasticity regulates the activity of individual neurons in a network and leads to activity- dependent self-organization [3].</p>
-<p>To demonstrate the ease and flexibility of using NESTML to create custom neuron and synapse models for NEST Simulator, a functional plasticity rule will then be introduced into the balanced E/I network to implement a biologically realistic version of reinforcement learning. This will be done by formulating the learning model in the NESTML language syntax, and using the associated toolchain to generate code for NEST [4]. In the custom plasticity rule, spike-timing dependent plasticity will interact with a global dopamine concentration, using the scalable volume transmitter concept from NEST [5].</p>
+<p><img class="side_img" src="img/nest_desktop_screenshot.png" align="right" width="200">NEST
+is an established, open-source simulator for spiking neuronal networks,
+which can capture a high degree of detail of biological network
+structures while retaining high performance and scalability from laptops
+to HPC [1]. This tutorial offers a hands-on experience in building and
+simulating neuron, synapse, and network models. It introduces several
+tools and front-ends to implement modeling ideas most effectively.
+Participants do not have to install software as all tools are accessible
+via the cloud.</p>
+<p><img class="side_img" src="img/orientation_selectivity.png" align="right" width="200">First,
+we look at NEST Desktop [2], a web-based graphical user interface (GUI),
+which allows the exploration of essential concepts in computational
+neuroscience without the need to learn a programming language. This
+advances both the quality and speed of teaching in computational
+neuroscience. To get acquainted with the GUI, we will create and analyze
+a balanced two-population network.</p>
+<p><img class="side_img" src="img/structural_plasticity.png" align="right" width="200">The
+tutorial will then turn to Jupyter (Python) notebooks where we will
+start by creating a spiking network based on the rodent visual system.
+This will enable us to study the emergence of orientation tuning of V1
+neurons in the feedforward thalamocortical pathway, through a nonlinear
+input-output transformation. Next, we will observe how homeostatic
+structural plasticity regulates the activity of individual neurons in a
+network and leads to activity- dependent self-organization [3].</p>
+<p><img class="side_img" src="img/nestml_figure.png" align="right" width="200">To
+demonstrate the ease and flexibility of using NESTML to create custom
+neuron and synapse models for NEST Simulator, a functional plasticity
+rule will then be introduced into the balanced E/I network to implement
+a biologically realistic version of reinforcement learning. This will be
+done by formulating the learning model in the NESTML language syntax,
+and using the associated toolchain to generate code for NEST [4]. In the
+custom plasticity rule, spike-timing dependent plasticity will interact
+with a global dopamine concentration, using the scalable volume
+transmitter concept from NEST [5].</p>
 <h3 id="citations">Citations</h3>
-<p>[1] <a href="https://nest-simulator.readthedocs.org/">https://nest-simulator.readthedocs.org/</a></p>
-<p>[2] <a href="https://nest-desktop.readthedocs.org/">https://nest-desktop.readthedocs.org/</a></p>
-<p>[3] Diaz-Pier S, Naveau M, Butz-Ostendorf M, Morrison A (2016). Automatic Generation of Connectivity for Large-Scale Neuronal Network Models through Structural Plasticity. Frontiers in Neuroanatomy, Vol. 10. https://doi.org/10.3389/fnana.2016.00057</p>
-<p>[4] <a href="https://nestml.readthedocs.org/">https://nestml.readthedocs.org/</a></p>
-<p>[5] Potjans W, Morrison A, Diesmann M (2010). Enabling functional neural circuit simulations with distributed computing of neuromodulated plasticity. Frontiers in Computational Neuroscience, 4:141. DOI: https://doi.org/10.3389/fncom.2010.00141</p>
+<p>[1] <a
+href="https://nest-simulator.readthedocs.org/">https://nest-simulator.readthedocs.org/</a></p>
+<p>[2] <a
+href="https://nest-desktop.readthedocs.org/">https://nest-desktop.readthedocs.org/</a></p>
+<p>[3] Diaz-Pier S, Naveau M, Butz-Ostendorf M, Morrison A (2016).
+Automatic Generation of Connectivity for Large-Scale Neuronal Network
+Models through Structural Plasticity. Frontiers in Neuroanatomy, Vol.
+10.
+<a href="https://doi.org/10.3389/fnana.2016.00057">https://doi.org/10.3389/fnana.2016.00057</a></p>
+<p>[4] <a
+href="https://nestml.readthedocs.org/">https://nestml.readthedocs.org/</a></p>
+<p>[5] Potjans W, Morrison A, Diesmann M (2010). Enabling functional
+neural circuit simulations with distributed computing of neuromodulated
+plasticity. Frontiers in Computational Neuroscience, 4:141. DOI:
+<a href="https://doi.org/10.3389/fncom.2010.00141">https://doi.org/10.3389/fncom.2010.00141</a></p>
 <h2 id="schedule-on-site-tutorial">Schedule (on-site tutorial)</h2>
 <script>
 var default_tz = 'Europe/Paris';
@@ -148,7 +198,9 @@ window.addEventListener('load', (event) => {
 });
 
 </script>
-<p>The tutorial will start on <span id="start_date_time">Saturday, July 15th, 09:00</span>. <!-- !!! also update start time in the JavaScript below, and in the <noscript> table in plain HTML --></p>
+<p>The tutorial will start on <span id="start_date_time">Saturday, July
+15th, 09:00</span>.
+<!-- !!! also update start time in the JavaScript below, and in the <noscript> table in plain HTML --></p>
 <div id="schedule" name="schedule">
 <table>
 <tr>
@@ -166,7 +218,8 @@ Description
 </noscript>
 </td>
 <td>
-Overview and introduction to NEST Simulator<br><span style="font-style:italic">Charl Linssen</span>
+Overview and introduction to NEST Simulator<br><span
+style="font-style:italic">Charl Linssen</span>
 </td>
 </tr>
 <tr>
@@ -176,7 +229,8 @@ Overview and introduction to NEST Simulator<br><span style="font-style:italic">C
 </noscript>
 </td>
 <td>
-Hands-on with NEST Desktop<br><span style="font-style:italic">Jens Bruchertseifer, Sebastian Spreizer</span>
+Hands-on with NEST Desktop<br><span style="font-style:italic">Jens
+Bruchertseifer, Sebastian Spreizer</span>
 </td>
 </tr>
 <tr>
@@ -196,7 +250,8 @@ Coffee break
 </noscript>
 </td>
 <td>
-Emergence of V1 orientation tuning<br><span style="font-style:italic">Wenqing Wei</span>
+Emergence of V1 orientation tuning<br><span
+style="font-style:italic">Wenqing Wei</span>
 </td>
 </tr>
 <tr>
@@ -216,7 +271,8 @@ Lunch break
 </noscript>
 </td>
 <td>
-Homeostatic structural plasticity<br><span style="font-style:italic">Aadhar Sharmai</span>
+Homeostatic structural plasticity<br><span
+style="font-style:italic">Aadhar Sharma</span>
 </td>
 </tr>
 <tr>
@@ -236,7 +292,8 @@ Coffee break
 </noscript>
 </td>
 <td>
-Modeling dopamine-modulated STDP synapses with NESTML<br><span style="font-style:italic">Pooja Babu, Charl Linssen</span>
+Modeling dopamine-modulated STDP synapses with NESTML<br><span
+style="font-style:italic">Pooja Babu, Charl Linssen</span>
 </td>
 </tr>
 <tr>
@@ -253,26 +310,48 @@ Closing
 </div>
 <h2 id="links">Links</h2>
 <div style="text-align:center">
-<a href="https://nest-simulator.readthedocs.io/"><img src="https://raw.githubusercontent.com/clinssen/OCNS-2023-NEST-workshop/master/nest_logo.png" border="0"></a><br><a href="https://nest-simulator.readthedocs.io/"><span style="font-size:120%; font-weight: 120%">NEST Simulator</span></a>
+<a
+href="https://nest-simulator.readthedocs.io/"><img src="https://raw.githubusercontent.com/clinssen/OCNS-2023-NEST-workshop/master/img/nest_logo.png" border="0"></a><br><a
+href="https://nest-simulator.readthedocs.io/"><span
+style="font-size:120%; font-weight: 120%">NEST Simulator</span></a>
 </div>
 <p>
-NEST Simulator is a spiking neuron simulator which specialises in point neurons and neurons with few comparments. It can simulate synaptic plasticity, structural plasticity, gap junctions and countless other features on machines ranging from home PCs to high-performance computing systems.
+NEST Simulator is a spiking neuron simulator which specialises in point
+neurons and neurons with few comparments. It can simulate synaptic
+plasticity, structural plasticity, gap junctions and countless other
+features on machines ranging from home PCs to high-performance computing
+systems.
 </p>
 <div style="text-align:center">
-<a href="https://nest-desktop.readthedocs.io/"><img src="https://raw.githubusercontent.com/clinssen/OCNS-2023-NEST-workshop/master/nest-desktop-logo.png" border="0" width="240" height="222"></a><br><a href="https://nest-desktop.readthedocs.io/"><span style="font-size:120%; font-weight: 120%">NEST Desktop</span></a>
+<a
+href="https://nest-desktop.readthedocs.io/"><img src="https://raw.githubusercontent.com/clinssen/OCNS-2023-NEST-workshop/master/img/nest-desktop-logo.png" border="0" width="240" height="222"></a><br><a
+href="https://nest-desktop.readthedocs.io/"><span
+style="font-size:120%; font-weight: 120%">NEST Desktop</span></a>
 </div>
 <p>
-NEST Desktop is a web-based GUI application for NEST Simulator. It enables the rapid construction, parametrization, and instrumentation of neuronal network models.
+NEST Desktop is a web-based GUI application for NEST Simulator. It
+enables the rapid construction, parametrization, and instrumentation of
+neuronal network models.
 </p>
 <div style="text-align:center">
-<a href="https://nestml.readthedocs.io/"><img src="https://raw.githubusercontent.com/clinssen/OCNS-2023-NEST-workshop/master/nestml-logo.png" border="0" width="240" height="73"></a><br><a href="https://nestml.readthedocs.io/"><span style="font-size:120%; font-weight: 120%">NESTML</span></a>
+<a
+href="https://nestml.readthedocs.io/"><img src="https://raw.githubusercontent.com/clinssen/OCNS-2023-NEST-workshop/master/img/nestml-logo.png" border="0" width="240" height="73"></a><br><a
+href="https://nestml.readthedocs.io/"><span
+style="font-size:120%; font-weight: 120%">NESTML</span></a>
 </div>
 <p>
-NESTML is a domain-specific modeling language and code-generation toolchain. It supports the specification of neuron models in an intuitive and concise syntax. Optimised code generation for the target simulation platform couples a highly accessible language with good simulation performance.
+NESTML is a domain-specific modeling language and code-generation
+toolchain. It supports the specification of neuron models in an
+intuitive and concise syntax. Optimised code generation for the target
+simulation platform couples a highly accessible language with good
+simulation performance.
 </p>
 <h2 id="registration">Registration</h2>
-<p>Please don’t forget to <a href="https://ocns.memberclicks.net/cns-2023-registration">register</a> for the on-site meeting in Leipzig. Registration is required.</p>
-<p>Tutorials are not recorded and are not livestreamed events on YouTube. Please note that this is an on-site event only.</p>
+<p>Please don’t forget to <a
+href="https://ocns.memberclicks.net/cns-2023-registration">register</a>
+for the on-site meeting in Leipzig. Registration is required.</p>
+<p>Tutorials are not recorded and are not livestreamed events on
+YouTube. Please note that this is an on-site event only.</p>
 <!-- ## Connection details
 
 To allow for interactive sessions, tutorials will run as “virtual rooms” (i.e. video calls) in CNS*2022. The platform is [Zoom](https://zoom.us/). It can run in your browser, and no account or installation is required. In some cases, installing the software on your local computer can improve the quality of the video and audio.
@@ -281,34 +360,64 @@ To allow for interactive sessions, tutorials will run as “virtual rooms” (i.
 
 -->
 <h2 id="software-requirements">Software requirements</h2>
-<p>We will provide login details for virtual machines on Human Brain Project (EBRAINS) infrastructure to registered participants. You will be able to access the required software directly from your browser, without requiring any installation. Access is provided to a NEST Desktop instance, as well as a <a href="https://jupyterlab.readthedocs.io/">JupyterLab</a> environment that includes NEST Simulator and NESTML.</p>
-<p>You can also run the software on a local computer. We suggest using two Docker images that we provide:</p>
+<p>We will provide login details for virtual machines on Human Brain
+Project (EBRAINS) infrastructure to registered participants. You will be
+able to access the required software directly from your browser, without
+requiring any installation. Access is provided to a NEST Desktop
+instance, as well as a <a
+href="https://jupyterlab.readthedocs.io/">JupyterLab</a> environment
+that includes NEST Simulator and NESTML.</p>
+<p>You can also run the software on a local computer. We suggest using
+two Docker images that we provide:</p>
 <ul>
-<li><p><a href="https://github.com/clinssen/OCNS-2023-NEST-workshop/tree/master/docker_containers/nest-nestml-tutorial">JupyterLab server with NEST and NESTML support</a></p>
-<p>Launches a Jupyter Notebook server on localhost at port 7003. The password is: <strong>nest25years</strong></p>
+<li><p><a
+href="https://github.com/clinssen/OCNS-2023-NEST-workshop/tree/master/docker_containers/nest-nestml-tutorial">JupyterLab
+server with NEST and NESTML support</a></p>
+<p>Launches a Jupyter Notebook server on localhost at port 7003. The
+password is: <strong>nest25years</strong></p>
 <p>The image is available via DockerHub. To install:</p>
 <pre><code>docker pull clifzju/nest-nestml-jupyterlab-ocns-tutorial</code></pre>
 <p>Then run the image while forwarding the port:</p>
 <pre><code>docker run -i -d -p 7003:7003 -t clifzju/nest-nestml-jupyterlab-ocns-tutorial</code></pre>
-<p>You can then access the server in your browser by navigating to the URL <a href="http://localhost:7003">http://localhost:7003</a>.</p>
-<p>The Docker container can be started in interactive mode (giving you a shell prompt) by omitting the <code>-d</code> parameter.</p></li>
-<li><p><a href="https://github.com/nest-desktop/nest-desktop/tree/dev/docker">NEST Desktop Docker image</a></p>
-<p>For local installation, we recommend to use the official NEST Desktop Docker image and instructions. Full instructions can be found at: <a href="https://nest-desktop.readthedocs.io/en/latest/deployer/deploy-docker-compose.html">https://nest-desktop.readthedocs.io/en/latest/deployer/deploy-docker-compose.html</a>.</p></li>
+<p>You can then access the server in your browser by navigating to the
+URL <a href="http://localhost:7003">http://localhost:7003</a>.</p>
+<p>The Docker container can be started in interactive mode (giving you a
+shell prompt) by omitting the <code>-d</code> parameter.</p></li>
+<li><p><a
+href="https://github.com/nest-desktop/nest-desktop/tree/dev/docker">NEST
+Desktop Docker image</a></p>
+<p>For local installation, we recommend to use the official NEST Desktop
+Docker image and instructions. Full instructions can be found at: <a
+href="https://nest-desktop.readthedocs.io/en/latest/deployer/deploy-docker-compose.html">https://nest-desktop.readthedocs.io/en/latest/deployer/deploy-docker-compose.html</a>.</p></li>
 </ul>
 <h2 id="feedback">Feedback</h2>
-<p>If you participated in (any part) of this tutorial, we value your feedback! Please take a moment to fill in our short feedback form at <a href="https://forms.gle/yv9MwmAKJugTs2mR9">https://forms.gle/yv9MwmAKJugTs2mR9</a>.</p>
+<p>If you participated in (any part) of this tutorial, we value your
+feedback! Please take a moment to fill in our short feedback form at <a
+href="https://forms.gle/yv9MwmAKJugTs2mR9">https://forms.gle/yv9MwmAKJugTs2mR9</a>.</p>
 <h2 id="organisation">Organisation</h2>
-<p>This tutorial is organised by (in alphabetical order): Aadhar Sharma (Bernstein Center, Freiburg, University of Freiburg, Germany), Charl Linssen (Jülich Research Centre, Germany), Jens Bruchertseifer (Trier University, Germany), Pooja Babu (Jülich Research Centre, Germany), Sebastian Spreizer (Trier University, Germany) and Wenqing Wei (Bernstein Center Freiburg, University of Freiburg, Germany).</p>
-<p>For general inquiries, please contact Charl at <a href="mailto:c.linssen@fz-juelich.de">c.linssen@fz-juelich.de</a>.</p>
+<p>This tutorial is organised by (in alphabetical order): Aadhar Sharma
+(Bernstein Center, Freiburg, University of Freiburg, Germany), Charl
+Linssen (Jülich Research Centre, Germany), Jens Bruchertseifer (Trier
+University, Germany), Pooja Babu (Jülich Research Centre, Germany),
+Sebastian Spreizer (Trier University, Germany) and Wenqing Wei
+(Bernstein Center Freiburg, University of Freiburg, Germany).</p>
+<p>For general inquiries, please contact Charl at
+<a href="mailto:c.linssen@fz-juelich.de">c.linssen@fz-juelich.de</a>.</p>
 <h2 id="acknowledgements">Acknowledgements</h2>
-<p>We acknowledge the use of <a href="https://fenix-ri.eu">Fenix Infrastructure</a> resources, which are partially funded from the European Union’s Horizon 2020 research and innovation programme through the ICEI project under the grant agreement No. 800858.</p>
+<p>We acknowledge the use of <a href="https://fenix-ri.eu">Fenix
+Infrastructure</a> resources, which are partially funded from the
+European Union’s Horizon 2020 research and innovation programme through
+the ICEI project under the grant agreement No. 800858.</p>
 </section>
 </div>
 <!-- FOOTER  -->
 <div id="footer_wrap" class="outer">
 <footer class="inner">
 <p class="copyright" style="color: #cccccc">
-Slate theme maintained by <a href="https://github.com/pages-themes">pages-themes</a> • Published with <a href="https://pages.github.com">GitHub Pages</a> • Timezone magic thanks to <a href="https://momentjs.com/">moment.js</a>
+Slate theme maintained by
+<a href="https://github.com/pages-themes">pages-themes</a> • Published
+with <a href="https://pages.github.com">GitHub Pages</a> • Timezone
+magic thanks to <a href="https://momentjs.com/">moment.js</a>
 </p>
 </footer>
 </div>
