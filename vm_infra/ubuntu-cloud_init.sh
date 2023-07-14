@@ -19,4 +19,6 @@ runcmd:
 - su -c "curl https://raw.githubusercontent.com/clinssen/HBP-summit-2023-workshop/master/docker_containers/docker-compose.yml -o /home/ubuntu/docker-compose.yml" - ubuntu
 - su -c "docker pull clifzju/nest-nestml-jupyterlab-ocns-tutorial" - ubuntu
 - su -c "docker run -i -d -p 7003:7003 -t clifzju/nest-nestml-jupyterlab-ocns-tutorial" - ubuntu
-- su -c "cd && docker-compose up -d" - ubuntu
+- su -c "cd" - ubuntu
+- su -c "sleep $((RANDOM % 30))" - ubuntu
+- su -c "DOCKER_CLIENT_TIMEOUT=300 COMPOSE_HTTP_TIMEOUT=300 docker-compose up -d" - ubuntu

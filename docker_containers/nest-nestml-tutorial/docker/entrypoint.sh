@@ -17,9 +17,10 @@ jupyter-lab &
 
 mv -f OCNS-2023-NEST-workshop /tmp/
 git clone https://github.com/clinssen/OCNS-2023-NEST-workshop
+git clone https://github.com/nest/nestml
 cd OCNS-2023-NEST-workshop/materials
 mv nestml /tmp/orig-workshop-NESTML-materials
-git clone https://github.com/nest/nestml
+ln -s ../../nestml/doc/tutorials nestml
 cd ..
 
 /bin/bash
