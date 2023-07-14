@@ -14,27 +14,33 @@ from io import StringIO
 import csv
 import re
 
+def get_list_of_allocated_ips():
+    r"""grab list of allocated floating IPs"""
+    ips = []
+    server_list = subprocess.check_output("openstack floating ip list --format csv".split(" "))
+    server_list = server_list.decode("utf-8")
+    f = StringIO(server_list)
+    reader = csv.reader(f, delimiter=',')
+    for i, row in enumerate(reader):
+        if i > 0:
+            ips.append(row[1])
+        else:
+            assert row[1] == "Floating IP Address"
+
+    return ips
+
+
 # allocate IPs
-n_ips = 40
+n_instances = 20
 net_id = "adc8872c-1b9e-4e07-bef9-c316d586d281"
 
-for i in range(n_ips):
+n_ips_to_allocate = max(0, n_instances - len(get_list_of_allocated_ips()))
+print("Going to allocate " + str(n_ips_to_allocate) + " IPs")
+for i in range(n_ips_to_allocate):
     subprocess.run(("openstack floating ip create " + net_id).split(" "))
-    #subprocess.check_output("openstack floating ip list".split(" "))
 
 
-# grab list of IPs
-ips = []
-server_list = subprocess.check_output("openstack floating ip list --format csv".split(" "))
-server_list = server_list.decode("utf-8")
-f = StringIO(server_list)
-reader = csv.reader(f, delimiter=',')
-for i, row in enumerate(reader):
-    if i > 0:
-        ips.append(row[1])
-    else:
-        assert row[1] == "Floating IP Address"
-
+ips = get_list_of_allocated_ips()
 
 # grab list of instances
 ids = []
@@ -49,8 +55,9 @@ for i, row in enumerate(reader):
         assert row[0] == "ID"
 
 
-# allocate!
-assert len(ids) == len(ips)
+# allocate IPs to instances
+print("Allocating IPs to instances")
+assert len(ips) >= len(ids)
 
 for i in range(len(ids)):
     subprocess.check_output(("openstack server add floating ip " + ids[i] + " " + ips[i]).split(" "))
@@ -58,9 +65,11 @@ for i in range(len(ids)):
 
 
 # check that everything is up
+print("Going to check that servers are up")
 for ip in ips:
     try:
         print(subprocess.check_output(("curl -s -o /dev/null -D - " + ip + ":7001").split(" ")))
+        print(subprocess.check_output(("curl -s -o /dev/null -D - " + ip + ":7003").split(" ")))
     except:
         print("Issue with IP: " + str(ip))
 
