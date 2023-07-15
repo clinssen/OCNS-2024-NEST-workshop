@@ -250,6 +250,19 @@ The tutorial will start on <span id="start_date_time">Saturday, July 15th, 09:00
 </div>
 
 
+## Materials
+
+Course materials (presentations and notebooks) are available in our repository.
+
+For presentations:
+
+[https://github.com/clinssen/OCNS-2023-NEST-workshop/tree/master/presentations](https://github.com/clinssen/OCNS-2023-NEST-workshop/tree/master/presentations)
+
+For the tutorial notebooks:
+
+[https://github.com/clinssen/OCNS-2023-NEST-workshop/tree/master/materials](https://github.com/clinssen/OCNS-2023-NEST-workshop/tree/master/materials)
+
+
 ## Links
 
 <div style="text-align:center">[<img src="https://raw.githubusercontent.com/clinssen/OCNS-2023-NEST-workshop/master/img/nest_logo.png" border="0">](https://nest-simulator.readthedocs.io/)<br>[<span style="font-size:120%; font-weight: 120%">NEST Simulator</span>](https://nest-simulator.readthedocs.io/)</div>
