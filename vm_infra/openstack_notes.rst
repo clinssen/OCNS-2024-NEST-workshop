@@ -9,7 +9,7 @@ Configuration via web interface
 
 First, set up the basic configuration via the OpenStack web GUI.
 
-https://jusuf-cloud.fz-juelich.de/ (log in with LDAP credentials)
+https://cloud.jsc.fz-juelich.de/ (log in with LDAP credentials)
 
 For instructions on network setup, see: https://apps.fz-juelich.de/jsc/hps/jusuf/index.html
 
