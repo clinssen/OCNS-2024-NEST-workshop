@@ -32,7 +32,7 @@ def get_list_of_allocated_ips():
 
 # allocate IPs
 n_instances = 20
-net_id = "adc8872c-1b9e-4e07-bef9-c316d586d281"
+net_id = "c2ce19a1-ad08-41fb-8dd2-4b97d78815fc"
 
 n_ips_to_allocate = max(0, n_instances - len(get_list_of_allocated_ips()))
 print("Going to allocate " + str(n_ips_to_allocate) + " IPs")
