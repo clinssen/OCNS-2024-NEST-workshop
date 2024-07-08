@@ -315,14 +315,7 @@ If you participated in (any part) of this tutorial, we value your feedback! Plea
 
 This tutorial is organised by (in alphabetical order):
 
-Iiro Ahokainen (Tampere University, Finland)
-Jasper Albers (Jülich Research Centre, Germany)
-Pooja Babu (Jülich Research Centre, Germany)
-Joshua Boettcher (Jülich Research Centre, Germany)
-Jens Bruchertseifer (Trier University, Germany)
-Leander Ewert (Jülich Research Centre, Germany)
-Charl Linssen (Jülich Research Centre, Germany)
-Willem Wybo (Jülich Research Centre, Germany)
+Iiro Ahokainen (Tampere University, Finland), Jasper Albers (Jülich Research Centre, Germany), Pooja Babu (Jülich Research Centre, Germany), Joshua Boettcher (Jülich Research Centre, Germany), Jens Bruchertseifer (Trier University, Germany), Leander Ewert (Jülich Research Centre, Germany), Charl Linssen (Jülich Research Centre, Germany), and Willem Wybo (Jülich Research Centre, Germany)
 
 For general inquiries, please contact Charl at <a href="mailto:c.linssen@fz-juelich.de">c.linssen@fz-juelich.de</a>.
 
