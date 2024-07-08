@@ -34,7 +34,7 @@ not have to install software as all tools are accessible via the cloud. All part
 
 <img class="side_img" src="img/nestml_figure2.png" align="right">In this tutorial, a neuron and synapse model are defined in NESTML that are subsequently used in a network to perform learning, prediction and replay of sequences of items, such as letters, images or sounds. The architecture learns sequences in a continuous manner: the network is exposed to repeated presentations of a given ensemble of sequences (e.g., {A,D,B,E} and {F,D,B,C}). At the beginning of the learning process, all presented sequence elements are unanticipated and do not lead to a prediction. As a consequence, the network generates mismatch signals and adjusts its synaptic strengths to minimise the prediction error.
 
-<img class="side_img" src="img/cm_neurons_layers.png" align="right">We investigate how dendritic properties of neurons can be captured by constructing compartmental models in NEST, and using the [https://neatdend.readthedocs.io/en/latest/](NEAT toolbox). NEAT is a python library for the study, simulation and simplification of morphological neuron models. NEAT implements a new and powerful method to simplify morphological neuron models into compartmental models with few compartments.
+<img class="side_img" src="img/cm_neurons_layers.png" align="right">We investigate how dendritic properties of neurons can be captured by constructing compartmental models in NEST, and using the [NEAT toolbox](https://neatdend.readthedocs.io/en/latest/). NEAT is a python library for the study, simulation and simplification of morphological neuron models. NEAT implements a new and powerful method to simplify morphological neuron models into compartmental models with few compartments.
 
 ### Citations
 
