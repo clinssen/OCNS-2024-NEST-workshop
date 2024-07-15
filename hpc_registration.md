@@ -19,7 +19,7 @@ title: "From single-cell modeling to large-scale network dynamics with NEST Simu
 
 ## Getting access to cloud computing resources
 
- - [ ] **Register/Create JSC account** at https://judoor.fz-juelich.de - [**Video-Howto (1:10)**](https://drive.google.com/file/d/1-DfiNBP4Gta0av4lQmubkXIXzr2FW4a-/view)
+ - [ ] **Register/Create JSC account** at [https://judoor.fz-juelich.de](https://judoor.fz-juelich.de) - [**Video-Howto (1:10)**](https://drive.google.com/file/d/1-DfiNBP4Gta0av4lQmubkXIXzr2FW4a-/view)
     - Click on "Register"
     - Enter your email address
     - Click on "Send confirmation mail..."
@@ -27,8 +27,7 @@ title: "From single-cell modeling to large-scale network dynamics with NEST Simu
     - Click the confirmation link
 
  - [ ] **Join** the training project **training2422**
-     - [ ] by following this link:
-         - **https://judoor.fz-juelich.de/projects/join/training2422**
+     - [ ] by following this link: [https://judoor.fz-juelich.de/projects/join/training2422](https://judoor.fz-juelich.de/projects/join/training2422)
      - [ ] **or** by choosing this general approach - [**Video-Howto (1:06)**](https://drive.google.com/file/d/1XdQSdML_jqGqvr_2WXqzlE-G6hiuYE2_/view)
      - Login to https://judoor.fz-juelich.de
      - Scroll to section "Projects"
@@ -45,7 +44,7 @@ title: "From single-cell modeling to large-scale network dynamics with NEST Simu
          - systems will be listed in section "Systems"
 
 - [ ] **Sign usage agreement online** - [**Video-Howto (1:13)**](https://drive.google.com/file/d/1mEN1GmWyGFp75uMIi4d6Tpek2NC_X8eY/view)
-     - Login to https://judoor.fz-juelich.de
+     - Login to [https://judoor.fz-juelich.de](https://judoor.fz-juelich.de)
      - Scroll to section "Systems"
      - Click on "You need to _sign the usage agreement_ to access this system"
      - Sign the usage agreement online
@@ -56,7 +55,7 @@ title: "From single-cell modeling to large-scale network dynamics with NEST Simu
      - Shortly after your HPC accounts are prepared you will see 
          - "jupyter-jsc" in the section "Connected Services"
 
-- [ ] **Login** at https://jupyter-jsc.fz-juelich.de - [**Video-Howto (1:34)**](https://drive.google.com/file/d/1S8_DaZRjBUOv7S3xT_KO8WFf44BqlR0O/view)
+- [ ] **Login** at [https://jupyter-jsc.fz-juelich.de](https://jupyter-jsc.fz-juelich.de) - [**Video-Howto (1:34)**](https://drive.google.com/file/d/1S8_DaZRjBUOv7S3xT_KO8WFf44BqlR0O/view)
      - Click on "Login"
      - Login with your new **JSC account**
      - If this is your first login
