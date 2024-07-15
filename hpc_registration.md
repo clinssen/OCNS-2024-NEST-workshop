@@ -64,8 +64,10 @@ title: "From single-cell modeling to large-scale network dynamics with NEST Simu
          - agree to the terms of service
          - click the link in the confirmation mail
 
-- [ ] **CONGRATULATIONS - YOU ARE READY FOR THE TRAINING COURSE**
-
+- [ ] **Start the server**
+     - Start a new Jupyter server by clicking the `+` button.
+     - Select JupyterLab 4.2 on the JUSUF system. Select the LoginNode partition.
+     - Once the server has started, open the notebook that you want to work on. Then, in the top right, click the text "Python 3 (ipykernel)" to select our custom kernel that has NEST and other tools installed; it is called ``ocns_2024_nest_nestml_kernel``.
 
 </section>
 </div>
