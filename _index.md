@@ -58,7 +58,7 @@ Frontiers in Computational Neuroscience, 4:141. DOI:
 ## Schedule (on-site tutorial)
 
 <script>
-var default_tz = 'Europe/Paris';
+var default_tz = 'America/Fortaleza';
 
 var start_time = moment.tz("2024-07-20 09:00", "America/Fortaleza"); // !!! also update start time in the <noscript> table in plain HTML
 
