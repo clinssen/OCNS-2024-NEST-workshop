@@ -241,7 +241,7 @@ For general inquiries, please contact Charl at <a href="mailto:c.linssen@fz-juel
 
 ## Acknowledgements
 
-We acknowledge the use of [Fenix Infrastructure](https://fenix-ri.eu) resources, which are partially funded from the European Union's Horizon 2020 research and innovation programme through the ICEI project under the grant agreement No. 800858.
+We gratefully acknowledge the use of [Fenix Infrastructure](https://fenix-ri.eu) resources as part of the Human Brain Project, funded from the European Union’s Horizon 2020 Framework Programme for Research and Innovation under Specific Grant Agreements No. 720270, No. 785907 and No. 945539 (Human Brain Project SGA1, SGA2 and SGA3), as well as the resources, expertise and support of the [Jülich Supercomputing Centre (JSC)](https://www.fz-juelich.de/en/ias/jsc) at [Jülich Research Centre, Jülich, Germany](https://fz-juelich.de).
 
 </section>
 </div>
